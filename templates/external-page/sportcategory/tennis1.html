@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/training.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css" />
+<head>
+<style type="text/css">
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+
+  top: 10;
+  left: 0;
+  overflow-x: hidden;
+  padding-left: 50px;
+
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+ position:absolute;
+ z-index:-1;/* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.wrapper
+{
+	  box-shadow: 1px 1px 1px 1px;
+	  margin-top: 10px;
+	  padding:10px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+ <script type="text/javascript" src="js/graph.js"></script>
+
+ <script type="text/javascript" src="js/jquery.js"></script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<title>Eports Website</title>
+</head>
+<body>
+  <header>
+  <div class="container-fluid top-nav">
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="google_translate_element"  ></div>
+      </div>
+      <div class="col-sm-4"><p style="margin-top: 10px;text-align: center;color: white"><i class="fa fa-phone "></i> 1800-200-2244 | <i class="fa fa-envelope "></i>  info@govt.com</p></div>
+      <div class="col-sm-4">
+        <ul class="login-icon">
+          <li style="border-right: 2px solid white"><a href="" ><span class="fa fa-sign-in">&nbspLogin</span></a></li>
+                    <li><a href="" ><span class="fa fa-edit">&nbspRegister</span></a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="container-fluid " id="marquee_div">
+    <marquee><p>New job Vacancies are coming please look forword and seetthe bar</p></marquee>
+    
+
+
+  </div>
+  <div class="container" >
+    <div class="row">
+      
+      <div class="col-sm-6">
+        <img src="images/logo.png" width="55" height="90" align="left" style="margin: 10px">
+        <h4 style="margin-top: 15px">National E-sports Portal</h1>
+                <p>
+                  Ministry of Youth Affairs & Sports<br>
+                        Government of India
+                </p>
+        
+      </div>
+      <div class="col-sm-6">
+        <img src="images/khelo.png" width="200" height="100" align="right">
+        <img src="images/digital.png" width="200" height="100" align="right">
+      </div>
+
+      
+    </div>
+  </div>
+
+  <nav>
+    <div class="container-fluid main_navbar" id="nav">
+      
+
+        <ul class="main-icons">
+          <li class="active"><a href="index.html">Selection Process</a></li>
+          <li><a href="#">Sportswise Category</a></li>
+          <li><a href="#">Injuries Remedies</a></li>
+              <li><a href="#">Player Portfolio</a></li>
+              <li><a href="#">Online Coaching</a></li>
+              <li><a href="#">Academy Data</a></li>
+        </ul>
+      
+      
+    </div>
+
+
+  </nav>
+</header>
+
+<div style="height: 30px;"></div>
+<div class="container">
+  <h2 align="center">PLAYERS</h2>
+    <div class="row " id="cricket">
+         
+              <div class="column">
+                <div class="card">
+                    <img src="images/tennis/roger.jpg">
+                  <h3><b>Roger Federer</b></h3>
+                  <a href="#demo" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo" class="collapse"><p><b>Born: </b>March 14, 1988 (age 30)
+                  <br><b>Height: </b> 6' 11''<br>
+                  <b>Role: </b> Center<br>
+                  <b>Sports:</b>     Basketball<br>
+                  <b>No:</b>    3<br>
+                  <b>Match:</b>    112<br>
+                  <b>Country:</b>    American</p>
+
+                </div>
+                </div>
+              </div>
+
+
+               <div class="column">
+                <div class="card">
+                    <img src="images/tennis/novak.jpg">
+                  <h3><b>Novak Djokovic</b></h3>
+                  <a href="#demo1" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo1" class="collapse"><p><b>Born: </b>5 February 1985 (age 34)
+                  <br><b>Height: </b> 5' 9''<br>
+                  <b>Role: </b> Owner<br>
+                  <b>Sports:</b>     Football<br>
+                  <b>No:</b>    9<br>
+                  <b>Match:</b>    40<br>
+                  <b>Country:</b>    USA</p>
+                  <br>
+
+                </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                    <img src="images/tennis/rafael.jpg">
+                  <h3><b>Rafael Nadal</b></h3>
+                  <a href="#demo3" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo3" class="collapse">
+                  <p><b>Born: </b>February 17, 1963 (age 56)
+                  <br><b>Height: </b> 6′ 6″<br>
+                  <b>Role: </b> Owner<br>
+                  <b>Sports:</b>     Basketball<br>
+                  <b>No:</b>    23<br>
+                  <b>Match:</b>    97<br>
+                  <b>Country:</b>    USA</p>
+
+                </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                    <img src="images/tennis/stan.jpg">
+                  <h3><b>Stan Wawrinka</b></h3>
+                  <a href="#demo4" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo4" class="collapse">
+                 <p><b>Born: </b>October 12, 1999 (aged 63)
+                  <br><b>Height: </b> 6' 4''<br>
+                  <b>Role: </b> Center<br>
+                  <b>Sports:</b>     Baskettball<br>
+                  <b>No:</b>    11<br>
+                  <b>Match:</b>    120<br>
+                  <b>Country:</b>    Pennsylvania</p>
+                  <br>
+
+                </div>
+                </div><br><br>
+              </div>
+<div><img src="images/tennis/tenniswc.jpg"></div>         
+                
+
+    
+</body>
+<script type="text/javascript">
+     var nav = document.getElementById('nav');
+
+       window.onscroll = function () {
+
+         if(window.pageYOffset > 100){
+
+          nav.style.position = "fixed";
+          nav.style.top = 0;
+
+          }else{
+            // nav.style.position = "absolute";
+            nav.style.position = 'relative'; //fixed
+            nav.style.top = 100;
+          }
+       }
+
+
+</script>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>

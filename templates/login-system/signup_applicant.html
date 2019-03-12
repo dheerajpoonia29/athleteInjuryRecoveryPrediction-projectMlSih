@@ -1,0 +1,162 @@
+{% extends "login-system/layout.html" %}
+
+{% block msg %}
+<h1>Applicant signup form</h1>
+<p><mark>{{ msg }}</mark></p>
+{% endblock %}
+
+
+{% block body %}
+<h5>{{ field }}</h5>
+<form action="{{ url_for('register') }}" method="POST">
+    <!--name,dob-->
+    <div class="row">
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Name <span style="color:red">*</span></label><br>
+                <input type="text" name="name" pattern="[A-Za-z' ']+" title="name only contain alphabat" class="form-control"  maxlength="30" required/>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>D.O.B<span style="color:red">*</span></label>
+                <input class="form-control" type="date" name="dob" required /> </div>
+        </div>
+
+
+    </div>
+    <!--sex,email-->
+    <div class="row">
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Sex<span style="color:red">*</span></label>
+                <select required aria-required="true" class="form-control" name="sex">
+                    <option value="">Choose</option>
+                    <option value="m">male</option>
+                    <option value="f">female</option>
+                    <option value="o">other</option>
+                </select>
+
+            </div>
+        </div>
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+
+                <label>Email<span style="color:red">*</span></label>
+                <input class="form-control" type="email" name="email" maxlength="50" required />
+            </div>
+        </div>
+    </div>
+    <!--mobile no,aadhar no-->
+    <div class="row">
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Mobile No <span style="color:red">*</span></label>
+                <input class="form-control" type="tel" name="mobileno" pattern="[1-9]{1}[0-9]{9}" value="{{ number }}" placeholder="{{ number }}" disabled/>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Aadhar No<span style="color:red">*</span></label>
+                <input class="form-control" type="tel" name="aadhar" pattern="[1-9]{12}" title="please enter valid aadhar number followed by 12 digit" required />
+
+            </div>
+        </div>
+    </div>
+    <!--pincode,area-->
+    <div class="row">
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Pin-Code<span style="color:red">*</span></label>
+                <input class="form-control" type="tel" name="pincode" pattern="[1-9]{6}" title="please enter valid pincode followed by 6 digit" required />
+            </div>
+        </div>
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+
+                <label>area<span style="color:red">*</span></label>
+                <select required aria-required="true" class="form-control" name="area">
+                        <option value="">Choose</option>
+                        <option value="coach">coach</option>
+                        <option value="employee">employee</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+    <!--qualification,experience-->
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>qualification<span style="color:red">*</span></label>
+                <input class="form-control" type="textarea" name="qualification" placeholder="qualification" required />
+            </div>
+        </div>
+
+
+        <div class="col-sm-6">
+                <div class="form-group">
+                        <label>experience<span style="color:red">*</span></label>
+                        <select required aria-required="true" class="form-control" name="experience">
+                                <option value="">Choose</option>
+                                <option value="2">below 2 year</option>
+                                <option value="5">below 5 year</option>
+                                <option value="10">below 10 year</option>
+                            </select>
+                    </div>
+        </div>
+    </div>
+    <!--achievement,status-->
+    <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>achievement <span style="color:red">*</span></label>
+                    <textarea name="achievement"></textarea>
+                </div>
+            </div>
+    
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Passport No<span style="color:red">*</span></label>
+                <input class="form-control" type="tel" name="passport" title="please enter valid passport number followed by 12 digit" required />
+
+            </div>
+        </div>
+    </div>
+            
+    </div>
+
+    <div class="row">
+            <div class="col-sm-6">
+                    <div class="form-group">
+                            <label>Password<span style="color:red">*</span></label>
+                            <input class="form-control" type="password" name="password" maxlength="30" placeholder="enter password" required />
+            
+                        </div>
+                    </div>
+            <div class="col-sm-6">
+                    <div class="form-group">
+                        <button class="btn btn-primary" align="center" type="submit">Create Account</button>
+                    </div>
+                </div>
+    </div>
+  
+
+</form>
+{% endblock %}

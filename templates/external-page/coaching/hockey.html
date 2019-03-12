@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+    <title>Cricket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/cricket.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+  
+  </head>
+<body>
+    
+<header>
+    <div class="container-fluid top-nav">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="google_translate_element"  ></div>
+            </div>
+            <div class="col-sm-4"><p style="margin-top: 10px;text-align: center;color: white"><i class="fa fa-phone "></i> 1800-200-2244 | <i class="fa fa-envelope "></i>  info@govt.com</p></div>
+            <div class="col-sm-4">
+                <ul class="login-icon">
+                    <li style="border-right: 2px solid white"><a href="" ><span class="fa fa-sign-in">&nbspLogin</span></a></li>
+                    <li><a href="" ><span class="fa fa-edit">&nbspRegister</span></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container-fluid " id="marquee_div">
+        <marquee><p>New job Vacancies are coming please look forword and seetthe bar</p></marquee>
+        
+
+
+    </div>
+    <div class="container" >
+        <div class="row">
+            
+             <div class="col-sm-6">
+                <a href="index.html"><img src="static/images/logo.png" width="55" height="90" align="left" style="margin: 10px">
+                <h4 style="margin-top: 15px">National E-sports Portal</h1>
+                <p >
+                    Ministry of Youth Affairs & Sports<br>
+                        Government of India
+                </p>
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <img src="static/images/khelo.png" width="200" height="100" align="right">
+                <img src="static/images/digital.png" width="200" height="100" align="right">
+            </div>
+
+            
+        </div>
+    </div>
+
+    <nav>
+        <div class="container-fluid main_navbar" id="nav">
+                          
+            <ul class="main-icons">
+                <li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+              </ul>
+            
+        </div>
+
+
+    </nav>
+</header>
+<div style="height: 30px;"></div>
+
+
+<div class="container">
+  <div class="row" style="margin-top: 30px">
+    <div class="col-sm-6">
+    <div class="card">
+      <iframe height="220" src="https://www.youtube.com/embed/C1XmQhjQVXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h4>How to do the Spin </h4>
+      <p> The spin can be used as an elimination skill or in a short corner. Get the ball in front of your body. Get the ball in the hook of your hockey stick. Give a big step forward with your left foot. Bring your right foot back past your left foot, so you can start the spin. Spin around and keep the ball under control and in the hook of your stick.</p>
+    </div></div>
+    
+  <div class="col-sm-6">
+    <div class="card">
+      <iframe height="220" src="https://www.youtube.com/embed/QBllZdGavtU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h4>Ball Control</h4>
+      <p>Don't worry about strength! You can have ripped forearms, a core, and huge arms, but that won't do anything for your shot if you're a beginner. First work on shooting. 100 shots a day will do wonders for you. We could recommend would be to get a shooting pad and work on pulling the puck towards your body.</p>
+    </div>
+    
+  </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row" style="margin-top: 30px">
+    <div class="col-sm-6">
+    <div class="card">
+      <iframe height="220" src="https://www.youtube.com/embed/wzoLri5rLas" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h4>Best Field Hockey Skills Ever!</h4>
+      <p>These are some of the best field hockey skills ever, by amazing players from all over the world. They are pretty amazing and they show us what we can do in field hockey.</p>
+    </div></div>
+    
+  <div class="col-sm-6">
+    <div class="card">
+      <iframe height="220" src="https://www.youtube.com/embed/aeoWDofAT5o?start=99" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h4>First Game New to Ice Hockey</h4>
+      <p>  You can be the worst stick handler in the world and have no shot whatsoever, but if you can skate, that won't matter as much. Skating will supplement your game better than anything else possibly can. </p>
+    </div>
+    
+  </div>
+  </div>
+</div>
+
+
+
+<div style="height: 30px;"></div>
+
+</body>
+<script type="text/javascript">
+     var nav = document.getElementById('nav');
+
+       window.onscroll = function () {
+
+         if(window.pageYOffset > 100){
+
+          nav.style.position = "fixed";
+          nav.style.top = 0;
+
+          }else{
+            // nav.style.position = "absolute";
+            nav.style.position = 'relative'; //fixed
+            nav.style.top = 100;
+          }
+       }
+
+
+</script>
+</html>

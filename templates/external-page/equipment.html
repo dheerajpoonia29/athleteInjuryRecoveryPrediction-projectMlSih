@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+
+{% block style %}
+
+{% endblock %}
+
+{% block nav1 %}
+<div class="container-fluid top-nav">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div id="google_translate_element"></div>
+			</div>
+			<div class="col-sm-4">
+				<p style="margin-top: 10px;text-align: center;color: white"><i class="fa fa-phone "></i> 1800-200-2244 | <i class="fa fa-envelope "></i>
+					info@govt.com</p>
+			</div>
+			<div class="col-sm-4">
+				<ul class="login-icon">
+					<li style="border-right: 2px solid white">
+						<a href="{{ url_for('signin') }}"><span class="fa fa-sign-in">&nbspLogin</span></a-->
+					</li>
+					<li>
+						<a href="{{ url_for('signup') }}"><span class="fa fa-edit">&nbspEquipments</span></a-->
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
+{% block nav4 %}
+<nav>
+	<div class="container-fluid main_navbar">
+		<div class="row">
+        <ul class="main-icons">
+            <li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+          </ul>
+		</div>
+
+	</div>
+</nav>
+{% endblock %}
+
+{% block containt %}
+<div style="height: 30px;"></div>
+<div class="container">
+    <div class="row " id="cricket">
+                 
+              <div class="column">
+                <div class="card">
+                    <img src="static/images/cricket.png">
+                  <h3><b>Cricket</b></h3>
+                  <p>No Cricket teams depend on one or two players.The team always plays to win.</p>
+                  <p><b>- Virat Kohli</b></p>
+                  <a href="{{ url_for('kit_cricket') }}" class="btn btn-primary" style="margin-top: 8px">Equipments</a>
+                </div>
+              </div>
+
+
+               <div class="column">
+                <div class="card">
+                    <img src="static/images/hockey.jpg">
+                  <h3><b>Hockey</b></h3>
+                  A good hockey player plays where the puck is and a great hockey player plays where the puck is going to be.
+                  <p><b>- Wayne Gretzky</b></p>
+                  <a href="{{ url_for('kit_hockey') }}" class="btn btn-primary" style="margin-top: 8px">Equipments</a>
+                </div>
+              </div>
+
+              
+              <div class="column">
+                <div class="card">
+                    <img src="static/images/footballtutorial.jpg">
+                  <h3><b>Football</b></h3>
+                  <p>Football is a game of mistakes. Whoever makes the fewest mistakes wins.</p> 
+                  <p><b>- Johan Cruyff</b></p>
+                 <a href="{{ url_for('kit_football') }}" class="btn btn-primary" style="margin-top: 8px">Equipments</a>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                    <img src="static/images/kabadditutorial.png">
+                  <h3><b>Kabaddi</b></h3>
+                  <p>A sportsman is a man who every now and then, simply has to get out and kill something.</p>
+                  <p><b>- Stephen Leacock</b></p>
+                  <a href="{{ url_for('kit_kabaddi') }}" class="btn btn-primary" style="margin-top: 8px">Equipments</a>
+                </div>
+              </div>
+
+
+
+
+            
+                
+
+    </div>
+
+     <div class="row" style="margin-top: 30px">
+        <div class="column">
+                <div class="card">
+                    <img src="static/images/basketballtutorial.jpg">
+                  <h3><b>Basketball</b></h3>
+                  <p>A basketball team is like the five fingers on your hand. If you can get them all together, you have a fist. </p>
+                  <p><b>- Mike Krzyzewski</b></p>
+                  <a href="basketballkit.html" class="btn btn-primary" style="margin-top: 8px">Equipments</a>
+                </div>
+              </div>
+
+
+               <div class="column">
+                <div class="card">
+                    <img src="static/images/vollyball.jpeg">
+                  <h3><b>Vollyball</b></h3>
+                  <p>"Don't measure yourself by what you have accomplished, but by what you should have accomplished with your ability.</p>
+                  <p><b>- John Wooden</b></p>
+                  <a href="vollyballkit.html" class="btn btn-primary" style="margin-top: 8px">Equipments</a>
+                </div>
+              </div>
+
+              
+              <div class="column">
+                <div class="card">
+                    <img src="static/images/footballtutorial.jpg">
+                  <h3><b>Boxing</b></h3>
+                  In boxing, it is about the obsession of getting the most from yourself: wanting to dominate the world like a hungry young lion.
+                  <p><b>- Anthony Joshua</b></p>
+               
+                  <a href="boxingkit.html" class="btn btn-primary">Equipments</a>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                    <img src="static/images/badmintion.jpg">
+                  <h3><b>Badmintion</b></h3>
+                  A champion has to be disciplined by practicing regularly in the right manner most importantly ought to have self-belief.
+                  <p><b>- Saina Nehwal</b></p>
+                  <a href="badmintionkit.html" class="btn btn-primary">Equipments</a>
+                </div>
+              </div>
+         
+
+     </div>
+</div>
+{% endblock %}

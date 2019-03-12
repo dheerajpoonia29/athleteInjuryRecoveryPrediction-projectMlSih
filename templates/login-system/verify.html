@@ -1,0 +1,37 @@
+{% extends "login-system/layout.html" %}
+
+{% block msg %}<br>
+<h4 align="center"><strong>Yerify your entered mobile number</strong></h4>
+<p><mark>{{ msg }}</mark></p>
+{% endblock %}
+
+
+{% block body %}
+<h5 align="center">Mobile No. : {{ mob_no }} <mark></mark></h4>
+<form action="{{ url_for('verify_otp') }}" method="POST">
+<br>    
+    <div class="row" style="margin-left:38%">
+   
+                <div class="form-group" ><label for="destination">OTP<span style="color:red">*</span> </label>
+                    <input class="form-control" name="otp" type="tel" placeholder="enter receive otp here" pattern="[0-9]{4}" required/>
+                </div>
+
+
+    </div>
+    <div class="row" style="margin-left:38%">
+
+    <a href="{{ url_for('signup') }}">Retype Mobile Number ?</a>
+   
+</div>
+<div class="row" style="margin-left:38%">
+
+        <br>       
+        <button type="submit" class="btn btn-primary">Verify </button>
+    
+    </div>
+    <br>
+    </form>
+
+
+
+{% endblock %}

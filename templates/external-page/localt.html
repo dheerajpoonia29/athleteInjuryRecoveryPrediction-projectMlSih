@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+<head>
+<style type="text/css">
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+
+  top: 10;
+  left: 0;
+  overflow-x: hidden;
+  padding-left: 50px;
+
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+ position:absolute;
+ z-index:-1;/* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.wrapper
+{
+	  box-shadow: 1px 1px 1px 1px;
+	  margin-top: 10px;
+	  padding:10px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<title>Eports Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+ <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../static/css/training.css">
+<link rel="stylesheet" type="text/css" href="../static/css/selection.css">
+
+</head>
+<body>
+	
+<header>
+	<div class="container-fluid top-nav">
+		<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div id="google_translate_element"	></div>
+			</div>
+			<div class="col-sm-4"><p style="margin-top: 10px;text-align: center;color: white"><i class="fa fa-phone "></i> 1800-200-2244 | <i class="fa fa-envelope "></i>  info@govt.com</p></div>
+			<div class="col-sm-4">
+				<ul class="login-icon">
+					<li style="border-right: 2px solid white"><a href="" ><span class="fa fa-sign-in">&nbspLogin</span></a></li>
+                    <li><a href="" ><span class="fa fa-edit">&nbspRegister</span></a></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div class="container-fluid " id="marquee_div">
+		<marquee><p>New job Vacancies are coming please look forword and seetthe bar</p></marquee>
+		
+
+
+	</div>
+	<div class="container" >
+		<div class="row">
+			
+			 <div class="col-sm-6">
+                <a href="index.html"><img src="static/images/logo.png" width="55" height="90" align="left" style="margin: 10px">
+                <h4 style="margin-top: 15px">National E-sports Portal</h1>
+                <p >
+                    Ministry of Youth Affairs & Sports<br>
+                        Government of India
+                </p>
+                </a>
+            </div>
+			<div class="col-sm-6">
+				<img src="static/images/khelo.png" width="200" height="100" align="right">
+				<img src="static/images/digital.png" width="200" height="100" align="right">
+			</div>
+
+			
+		</div>
+	</div>
+
+	<nav>
+		<div class="container-fluid main_navbar">
+			<div class="row">
+
+					<ul class="main-icons">
+							<li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+							</ul>
+			</div>
+			
+		</div>
+
+
+	</nav>
+</header>
+
+
+
+<div class="sidenav" style="margin-top: 100px">
+  <a href="#cricket">CRICKET</a>
+  <a href="#football">FOOTBALL</a>
+  <a href="#hockey">HOCKEY</a>
+  <a href="#badminton">BADMINTON</a>
+  <a href="#volleyball">VOLLEYBALL</a>
+  <a href="#others">OTHERS</a>
+</div>
+
+<div class="main">
+<div class="container" id="cricket" ><br><br>
+	<h3>Cricket Tournaments</h3>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/crc1.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" >
+			<h2><a href="#">Gully cricket tournament</a></h2>
+			<p style="font-size: 15px"><b>Date :</b> 25th March 2018&nbsp<b><br>Place :</b> R K PURAM SECTOR 9 MARKET , South Delhi<br>
+				<b>Entry Fees :</b> Rs. 500/Team&nbsp<br><b>Prize Money :</b> Rs. 3000/-<br>
+				<b>District level</b><br>
+				<b>Organizer :</b> Bhushan(9958198569),Shubham(8860045908)</p>
+				<a href="#demo" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo" class="collapse">
+                	<p>All information and rules in pic.Whatsapp on 8375054691(Dishant gautam).Its really good chance to enjoy your childhood.Hurry up!</p>
+                </div>
+		</div>
+		<div class="col-sm-1" ><p>SPONSORS</p><img src="static/images/citi.png" style="width: 80px;height: 80px"><br><img src="static/images/coca.png" style="width: 80px;height: 80px">
+		</div>
+
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/crc2.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" >
+		<h2><a href="#">Champions 2K18 Cricket Tournament</a></h2>
+		<p style="font-size: 15px"><b>Date :</b> 25th Aug 2018&nbsp<b><br>Place :</b> Farm Ground, Todhunter Nagar, Saidapet, Chennai.<br>
+				<b>Entry Fees :</b> Rs. 1000/Team&nbsp<b><br>Prize Money :</b> <b>1 Prize :</b> Rs. 6,000 + Trophy/-&nbsp<b>2 Prize :</b> Rs. 3,000 + Trophy/-<br><b>State level</b><br><b>Organizer :</b> 8056093434,9940534301
+			</p>
+			<a href="#demo1" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo1" class="collapse">
+                <p>Player should Under 21. Proof is compulsory.This is Open Category of Cricket Tournament for Under 21 Age. Intrested teams can contact and Register your team as soon as possible.</p>
+            </div>
+   		</div>
+		<div class="col-sm-1" ><p>SPONSORS</p><img src="static/images/master.png" style="width: 80px;height: 80px"><br><img src="static/images/verizon.jpg" style="width: 80px;height: 80px"></div>
+
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/crc3.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h3><a href="#">CORPORATE DIWALI TROPHY CRICKET TOURNAMENT</a></h3>
+			<p style="font-size: 15px"><b>Date :</b> 28th Nov 2015&nbsp<br><b>Place :</b> 5, Raja Char Street, T-Nagar, c, Tamil Nadu, India<br>
+				<b>Entry Fees :</b> Rs. 7500/Team&nbsp<br><b>Prize Money :</b> <b>1 Prize :</b> Rs. 20,000 + Trophy/-&nbsp<b>2 Prize :</b> Rs. 16,000 + Trophy/-<br>
+				<b>State level</b><br>
+				<b>Organizer :</b> 9840595878
+			</p>
+			<a href="#demo2" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo2" class="collapse">
+                <p>Every Week Ends Only Saturdays & Sundays.16 teams 4 groups 3 League Each team will get to play 3 Leagues.Per Group Top Two 2 teams next round.</p>
+            </div>
+   		</div>
+		<div class="col-sm-1" ><p>SPONSORS</p><img src="static/images/tepco.jpg" style="width: 80px;height: 80px"><br><img src="static/images/microsoft.png" style="width: 80px;height: 80px"></div>
+	</div>
+
+</div>
+<div class="container" id="football" ><br><br>
+	<h3>Football Tournaments</h3>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/foot1.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" >
+			<h2><a href="#">Elite Football League of India</a></h2>
+			<p style="font-size: 15px"><b>Date :</b> 1st Oct 2018&nbsp<br><b>Place :</b> Poornima University, Rajasthan<br>
+				<b>Entry Fees :</b> Not available&nbsp<br><b>Prize Money :</b> Not available<br>
+				<b>State level</b>&nbsp<b><br>Organizer :</b> 7728062650,9887713120</p>
+				<a href="#demo3" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo3" class="collapse">
+            	<p>The Elite Football League of India was launched originally in 2011 as a mens league but has expanded to include 24 university football teams and 46 secondary school teams.			</p>
+		</div></div>
+		<div class="col-sm-1" ><p>SPONSORS</p><img src="static/images/pepsi.jpg" style="width: 80px;height: 80px"><br><img src="static/images/raytheon.jpg" style="width: 80px;height: 80px">
+		</div>
+
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/foot2.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" >
+		<h2><a href="#">Super Sports Cup 2018</a></h2>
+		<p style="font-size: 15px"><b>Date :</b> 24th Jan 2018&nbsp<br><b>Place :</b> K.D. Singh Babu Stadium, Lucknow<br> 
+				<b>Entry Fees :</b> -&nbsp<br><b>Prize Money :</b> -<br>
+				<b>National level</b><br>
+				<b>Organizer :</b>Super Sports Society</p>
+				 <a href="#demo4" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo4" class="collapse">
+            	<p>SUPER SPORTS CUP 2018 - All India Footbsall Tournament from 24th to 28th January, 2018 at K.D. Singh Babu Stadium, Lucknow organized Super Sports Society.<br>
+				 
+			</p></div>
+		</div>
+		<div class="col-sm-1" ><p>SPONSORS</p><img src="static/images/fda.jpg" style="width: 80px;height: 80px"><br><img src="static/images/hsbc.png" style="width: 80px;height: 80px">
+		</div>
+
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/foot3.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h2><a href="#">ScoreHero Football Turf</a></h2>
+			<p style="font-size: 15px"><b>Date :</b> 26th Feb 2019<br>
+				<b>Entry Fees :</b> -<br>
+				<b>Prize Money :</b> -<br>
+				<b>Place :</b> FREEKICK, LAXMAN NAGAR, BANER, PUNE, INDIA<br>
+				<b>State level</b><br>
+				<b>Organizer :</b> Turf Masters
+			</p>
+		</div>
+		<div class="col-sm-1" ><p>SPONSORS</p><img src="static/images/mitre.jpg" style="width: 80px;height: 80px"><br><img src="static/images/chevron.png" style="width: 80px;height: 80px"></div>
+
+	</div>
+
+</div>
+<div class="container" id="hockey" ><br><br>
+	<h3>Hockey Tournaments</h3>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/foot1.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" >
+			<h2><a href="#">Elite Hockey League of India</a></h2>
+			<p style="font-size: 15px"><b>Date :</b> 1st Oct 2018&nbsp<br><b>Place :</b> Poornima University, Rajasthan<br>
+				<b>Entry Fees :</b> Not available&nbsp<br><b>Prize Money :</b> Not available<br>
+				<b>State level</b>&nbsp<br><b>Organizer :</b> 7728062650,9887713120</p>
+				 <a href="#demo5" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo5" class="collapse">
+            	<p>With the backing of legendary NFL quarterback Kurt Warner as well Mike Ditka and actor/producer Mark Wahlberg, the league has been working tirelessly to bring American Football to India.
+			</p></div>
+		</div>
+		<div class="col-sm-1" ><p>SPONSORS</p><img src="static/images/adi.jpg" style="width: 80px;height: 80px"><br><img src="static/images/emir.jpg" style="width: 80px;height: 80px">
+		</div>
+
+	</div>
+
+</div>
+
+<div class="container" id="badminton" ><br><br>
+	<h3>Badminton Tournaments</h3>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/bad1.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" >
+			<h2><a href="#">Masters Badminton Championship 2019</a></h2>
+			<p style="font-size: 15px">
+				<b>Date :</b> 7th Apr 2018<br>
+				<b>Entry Fees :</b> Rs. 1000-2000/-<br>
+				<b>Prize Money :</b> <b>Winner-</b> Rs.8000/-
+				<b>RunnerUp-</b> Rs. 5000/- <br>
+				<b>Place :</b> Sawai Mansingh Stadium, Jaipur Nagar Nigam, Lalkothi, Jaipur, Rajasthan 302005<br>
+				<b>State level</b><br>
+				<b>Organizer :</b> 9891063988,9414046260
+			</p>
+		</div>
+		<div class="col-sm-1" ><p>SPONSORS</p><img src="static/images/sony.png" style="width: 80px;height: 80px"><br><img src="static/images/cas.png" style="width: 80px;height: 80px">
+		</div>
+
+	</div>
+
+</div>
+
+<div class="container" id="others" ><br><br>
+	<h3>Other Tournaments</h3>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/other1.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" >
+			<h2><a href="#">Eklavya Annual Sports Event 2019</a></h2>
+			<p style="font-size: 15px"><b>Date :</b> 26th Feb 2019&nbsp<br><b>Place :</b> Jaipur,Mahal Jagatpura, Jaipur, Rajasthan, India<br>
+				<b>Entry Fees :</b> depend on type&nbsp<br><b>Prize Money :</b> depend on type<br>
+				<b>District level</b>&nbsp<br><b>Organizer :</b> Eklavya  Academy</p>
+				 <a href="#demo6" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo6" class="collapse">
+            	<p>SGVU is organizing Eklavya 2k19 an Annual Event. The motto of this event is to promote sportsmanship and inspiring them with a grand platform. We want to spread the importance of sports through this event in everyone's life.
+			</p></div>
+		</div>
+		<div class="col-sm-1" ><p>SPONSORS</p><img src="static/images/ying.jpg" style="width: 80px;height: 80px"><br><img src="static/images/cent.jpg" style="width: 80px;height: 80px">
+		</div>
+
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/other2.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" >
+			<h3><a href="#">Jamna-Aita Championship Tennis Tournament 2019</a></h3>
+			<p style="font-size: 15px">All India Tennis Association is Jamna-Aita Championship Series(7) Tennis Tournament 2019 for Boys and Girls.<br>
+				<b>Date :</b> 1st Apr 2019<br>
+				<b>Entry Fees :</b> depend on type&nbsp<b>Prize Money :</b> depend on type
+				<br>
+				<b>Place :</b> Jamna Tennis Academy,Harmada,Jaipur<br>
+				<b>District level</b><br>
+				<b>Organizer :</b> All India Tennis Association.
+			</p>
+		</div>
+		<div class="col-sm-1" ><p>SPONSORS</p><img src="static/images/itau.jpg" style="width: 80px;height: 80px"><br><img src="static/images/wise.png" style="width: 80px;height: 80px">
+		</div>
+
+	</div>
+
+</div>
+</div>
+
+</body>
+<script type="text/javascript">
+	 var nav = document.getElementById('nav');
+
+       window.onscroll = function () {
+
+         if(window.pageYOffset > 100){
+
+          nav.style.position = "fixed";
+          nav.style.top = 0;
+
+          }else{
+            // nav.style.position = "absolute";
+            nav.style.position = 'relative'; //fixed
+            nav.style.top = 100;
+          }
+       }
+
+
+</script>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>

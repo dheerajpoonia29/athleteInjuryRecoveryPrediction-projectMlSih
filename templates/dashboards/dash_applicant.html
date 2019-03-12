@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<title>Dashboard_Applicant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/css/style.css">
+
+<style>
+  body{
+    background-color: white !important;
+  }
+  html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+
+<body class="w3-theme-l0">
+
+  <!-- Navbar -->
+  <header style="position:relative">
+    <!-- nav section2 marque -->
+		<div class="container-fluid " id="marquee_div">
+        <marquee>
+          <p>New job Vacancies are coming please look forword and seetthe bar</p>
+        </marquee>
+    </div>
+    <!-- nav section3 main navigation -->
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-6">
+          <img src="../static/images/logo.png" width="55" height="90" align="left" style="margin: 10px">
+          <h4 style="margin-top: 15px">National E-sports Portal</h1>
+            <p>
+              Ministry of Youth Affairs & Sports<br>
+              Government of India
+            </p>
+
+        </div>
+        <div class="col-sm-6">
+          <img src="../static/images/khelo.png" width="200" height="100" align="right">
+          <img src="../static/images/digital.png" width="200" height="100" align="right">
+        </div>
+
+
+      </div>
+    </div>
+
+  </header>
+  <!-- NAVIGATION BAR -->
+  <div style="background-color:orange !important">
+    <div class="container w3-bar w3-left-align w3-large">
+      <p class="w3-bar-item w3-right">Applicant
+            Dashboard</p>
+        <a class="w3-bar-item w3-right" href="{{ url_for('logout') }} " style="color:white"><strong>log out</strong></a>
+      
+      <div class="w3-dropdown-hover ">
+        <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">{{ count[0] }}</span></button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+          {% for x in msg %}
+          <a href="#" class="w3-bar-item w3-button">{{ x.msg }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+  </div>
+
+  <!-- Page Container -->
+  <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+    <!-- The Grid -->
+    <div class="w3-row">
+      <!-- Left Column -->
+      <div class="w3-col m3">
+        <!-- Profile -->
+        <div class="w3-card w3-round w3-white">
+          <div class="w3-container">
+            <h4 class="w3-center w3-margin">{{ applicant.name }}</h4>
+            <hr>
+            <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i>sex: {% if applicant.sex=='m'
+              %}male{%elif applicant.sex=='female'%}female{%else%}bisexual{%endif%}</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i>dob: {{applicant.dob}}</p>
+            <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i>pincode: {{applicant.pincode}}</p>
+          </div>
+        </div>
+        <br>
+
+        <!-- Accordion -->
+        <div class="w3-card w3-round">
+          <div class="w3-white">
+            <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>
+              Email</button>
+            <div id="Demo1" class="w3-hide w3-container">
+              <p>{{applicant.email}}</p>
+            </div>
+            <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i>
+              Mobile number</button>
+            <div id="Demo2" class="w3-hide w3-container">
+              <p>{{applicant.number}}</p>
+            </div>
+            <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i>
+              aadhar number</button>
+            <div id="Demo3" class="w3-hide w3-container">
+              <p>{{applicant.aadhar}}</p>
+            </div>
+            <button onclick="myFunction('Demo4')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i>
+              Documents</button>
+            <div id="Demo4" class="w3-hide w3-container">
+              <div class="w3-row-padding">
+                <br>
+                <div class="w3-half">
+                  <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+
+
+
+        <!-- End Left Column -->
+      </div>
+
+      <!-- Middle Column -->
+      <div class="w3-col m7">
+
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <center><h6 class="w3-opacity">Application status tracking system</h6></center>
+          <div class="container row w3-margin">
+                  <div class="col-sm-4">
+                    <center><i class="fa fa-circle" style="color:green;font: size 30px"></i>
+                      <br>Register</center>
+                  </div>
+                  
+                  <div class="col-sm-4">
+                    
+                      {% if applicant.status == 'y' %}
+                      <center><i class="fa fa-circle" style="color:green;font-size:15px"></i>
+                      {% else %}
+                      <center><i class="fa fa-circle-o" style="color:orangered;font-size:30px"></i>
+                      {% endif %}
+                        <br>Accept</center>
+                  </div>
+
+                  <div class="col-sm-4">
+
+                      {% if applicant.interview == 'y' %}
+                      <center><i class="fa fa-circle" style="color:green;font-size:15px"></i>
+                      {% else %}
+                      <center><i class="fa fa-circle-o" style="color:orangered;font-size:15px"></i>
+                      {% endif %}
+                        <br>Interview</center>
+                  </div>
+          </div>
+          <i class="w3-margin"></i>
+        </div>
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <center><h6 class="w3-opacity">Applicant characterstics</h6></center>
+          <div class="container row">
+          <div class="col-sm-6">
+              <label><strong>qualification</strong></label>
+              <p>{{ applicant.qualification }}</p>
+              <label><strong>area</strong></label>
+              <p>{{ applicant.area }}</p>
+          </div>
+          <div class="col-sm-6">
+              <label><strong>exprience</strong></label>
+              <p>{{ applicant.exprience }}</p>
+              <label><strong>achievement</strong></label>
+              <p>{{ applicant.achievement }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- End Middle Column -->
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-col m2">
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-margin"><strong>Your{% if applicant.area=='coach' %} academy {% elif
+                applicant.area=='employee' %} department {% endif %}</strong></p>
+            <p>here we show name of academy/department after application accept</p>
+            <span>visit academy/department</span>
+            <div class="w3-row w3-opacity">
+              <div class="w3-half">
+                <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+              </div>
+              <div class="w3-half">
+                <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p class="w3-margin"><strong>Interview Date</strong></p>
+            <p><strong>Isi-102 jaipur floor 1</strong></p>
+            <p>Friday 15:00</p>
+            <p><input type="button" placeholder="coming" disabled /></p>
+          </div>
+        </div>
+        <br>
+        <!-- End Right Column -->
+      </div>
+
+      <!-- End Grid -->
+    </div>
+
+    <!-- End Page Container -->
+  </div>
+  <br>
+
+  <script>
+    // Accordion
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+      } else {
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className =
+          x.previousElementSibling.className.replace(" w3-theme-d1", "");
+      }
+    }
+
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+
+      }, 'google_translate_element');
+    }
+
+  </script>
+  <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+</body>
+
+</html>

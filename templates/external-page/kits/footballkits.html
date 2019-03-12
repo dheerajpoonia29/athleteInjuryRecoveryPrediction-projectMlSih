@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+
+<head>
+    <title>Football Kit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/training.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+    <style>
+        .checked {
+  color: orange;
+}
+ </style>
+
+    <header>
+        <div class="container-fluid top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div id="google_translate_element"></div>
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="margin-top: 10px;text-align: center;color: white"><i class="fa fa-phone "></i>
+                            1800-200-2244 | <i class="fa fa-envelope "></i> info@govt.com</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="login-icon">
+                            <li style="border-right: 2px solid white"><a href=""><span class="fa fa-sign-in">&nbspLogin</span></a></li>
+                            <li><a href=""><span class="fa fa-edit">&nbspRegister</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid " id="marquee_div">
+            <marquee>
+                <p>New job Vacancies are coming please look forword and seetthe bar</p>
+            </marquee>
+
+
+
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <a href="index.html"><img src="static/images/logo.png" width="55" height="90" align="left" style="margin: 10px">
+                        <h4 style="margin-top: 15px">National E-sports Portal</h1>
+                            <p>
+                                Ministry of Youth Affairs & Sports<br>
+                                Government of India
+                            </p>
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <img src="static/images/khelo.png" width="200" height="100" align="right">
+                    <img src="static/images/digital.png" width="200" height="100" align="right">
+                </div>
+
+
+            </div>
+        </div>
+
+        <nav>
+            <div class="container-fluid main_navbar" id="nav">
+
+
+                    <ul class="main-icons">
+                            <li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+                          </ul>
+
+            </div>
+
+
+        </nav>
+    </header>
+    <div style="height: 30px;"></div>
+    <div class="container">
+        <div class="row " id="cricket">
+
+
+            <div class="column">
+                <div class="card">
+                    <img src="static/images/ballf.jpg">
+                    <h3><b>Football</b></h3>
+                    <p><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                        <span class="fa fa-star"></span></p>
+                    <p>Price- 500-12k <br>
+                        Vendor- Amazon/Flipkart/Local Vendor</p>
+
+                    <button class="btn btn-primary" style="margin-top: 8px">Register</button>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <div class="card">
+                    <img src="static/images/goalkeeperfootball.jpg">
+                    <h3><b>Gloves</b></h3>
+                    <p><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></p>
+                    <p>Price- 500-12k <br>
+                        Vendor- Amazon/Flipkart/Local Vendor</p>
+                    <button class="btn btn-primary">Register</button>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <div class="card">
+                    <img src="static/images/bootsfootball.jpg">
+                    <h3><b>Boots</b></h3>
+                    <p><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></p>
+                    <p>Price- 500-12k <br>
+                        Vendor- Amazon/Flipkart/Local Vendor</p>
+                    <button class="btn btn-primary" style="margin-top: 8px">Register</button>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="static/images/shinfootball.jpg">
+                    <h3><b>Shin Guards</b></h3>
+                    <p><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></p>
+                    <p>Price- 500-12k <br>
+                        Vendor- Amazon/Flipkart/Local Vendor</p>
+                    <button class="btn btn-primary" style="margin-top: 8px">Register</button>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+    <div style="height: 120px;"></div>
+</body>
+<script type="text/javascript">
+    var nav = document.getElementById('nav');
+
+    window.onscroll = function () {
+
+        if (window.pageYOffset > 100) {
+
+            nav.style.position = "fixed";
+            nav.style.top = 0;
+
+        } else {
+            // nav.style.position = "absolute";
+            nav.style.position = 'relative'; //fixed
+            nav.style.top = 100;
+        }
+    }
+
+
+</script>
+
+</html>

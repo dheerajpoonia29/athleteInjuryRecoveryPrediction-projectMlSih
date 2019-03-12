@@ -1,0 +1,42 @@
+{% extends "login-system/layout.html" %}
+
+{% block style %}
+{% endblock %}
+
+
+{% block msg %}
+    <h1>Choose Your Field</h1>
+    <p><mark>{{ msg }}</mark></p>
+{% endblock %}
+
+
+{% block body %}
+<form action="{{ url_for('send_otp') }}" method="POST">
+        
+    <div class="row">
+     <div class="col-sm-6">
+        <div class="form-group">
+            <label for="sel1">Select Category<span style="color:red">*</span></label>
+            <select class="form-control" required aria-required="true" id="sel1" name="field">
+                    <option value="">Choose</option>
+                    <option value="student">Student</option>
+                    <option value="player">Player</option>
+                    <option value="applicant">Applicant</option>
+                    <option value="goverment">Goverment</option>
+            </select>
+        </div> 
+     </div>
+     <div class="col-sm-6">
+        <div class="form-group">
+            <label for="destination">Mobile Number <span style="color:red">*</span></label>
+            <input class="form-control" name="number" type="tel" pattern="[1-9]{1}[0-9]{9}" placeholder="enter mobile number" pattern="[1-9]{1}[0-9]{9}" title="please enter valid mobile number" required/>
+        </div>
+     </div>
+ </div>
+  
+    
+    <button type="submit" class="btn btn-primary">Verify No</button>
+</form>
+
+
+{% endblock %}

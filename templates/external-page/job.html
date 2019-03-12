@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/training.css">
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+	<style type="text/css">
+		.sidenav {
+			height: 100%;
+			width: 200px;
+			position: fixed;
+
+			top: 10;
+			left: 0;
+			overflow-x: hidden;
+			padding-left: 50px;
+
+		}
+
+		.sidenav a {
+			padding: 6px 8px 6px 16px;
+			text-decoration: none;
+
+			color: #818181;
+			display: block;
+		}
+
+		.sidenav a:hover {
+			color: black;
+		}
+
+		.main {
+			margin-left: 200px;
+			/* Same as the width of the sidenav */
+			position: absolute;
+			z-index: -1;
+			/* Increased text to enable scrolling */
+			padding: 0px 10px;
+		}
+
+		.wrapper {
+			box-shadow: 1px 1px 1px 1px;
+			margin-top: 10px;
+			padding: 10px;
+
+		}
+
+		@media screen and (max-height: 450px) {
+			.sidenav {
+				padding-top: 15px;
+			}
+
+			.sidenav a {
+				font-size: 18px;
+			}
+		}
+	</style>
+	<script type="text/javascript" src="js/graph.js"></script>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<title>Eports Website</title>
+</head>
+
+<body>
+
+	<header>
+		<div class="container-fluid top-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div id="google_translate_element"></div>
+					</div>
+					<div class="col-sm-4">
+						<p style="margin-top: 10px;text-align: center;color: white"><i class="fa fa-phone "></i> 1800-200-2244 | <i class="fa fa-envelope "></i>
+							info@govt.com</p>
+					</div>
+					<div class="col-sm-4">
+						<ul class="login-icon">
+							<li style="border-right: 2px solid white"><a href=""><span class="fa fa-sign-in">&nbspLogin</span></a></li>
+							<li><a href=""><span class="fa fa-edit">&nbspRegister</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid " id="marquee_div">
+			<marquee>
+				<p>New job Vacancies are coming please look forword and seetthe bar</p>
+			</marquee>
+
+
+
+		</div>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6">
+					<img src="static/images/logo.png" width="55" height="90" align="left" style="margin: 10px">
+					<h4 style="margin-top: 15px">National E-sports Portal</h1>
+						<p>
+							Ministry of Youth Affairs & Sports<br>
+							Government of India
+						</p>
+
+				</div>
+				<div class="col-sm-6">
+					<img src="static/images/khelo.png" width="200" height="100" align="right">
+					<img src="static/images/digital.png" width="200" height="100" align="right">
+				</div>
+
+
+			</div>
+		</div>
+
+		<nav>
+			<div class="container-fluid main_navbar" id="nav">
+
+
+					<ul class="main-icons">
+							<li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+						  </ul>
+
+
+			</div>
+
+
+		</nav>
+	</header>
+
+
+
+
+	<div class="sidenav">
+		<a href="#Jaipur">Jaipur</a>
+		<a href="#delhi">Delhi</a>
+		<a href="#Noida">Noida</a>
+		<a href="#Mumbai">Mumbai</a>
+		<a href="#contact">Bengaluru</a>
+		<a href="#contact">Kolkata</a>
+		<a href="#contact">Kerala</a>
+		<a href="#contact">Hyderabad</a>
+		<a href="#contact">Pune</a>
+		<a href="#Contact">Mangalore</a>
+		<a href="#contact">Chennai</a>
+		<a href="#contact">Chandigarh</a>
+	</div>
+
+	<div class="main">
+		<div class="container" id="Mumbai"><br>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job1.png" style="width: 180px;height: 180px"></div>
+				<div class="col-sm-8">
+					<h3>Sports Coordinator</h3>
+					<h6>Profile Summary</h6>
+					<p style="font-size: 15px"><b>EmploymentType</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Experience</b> : 2-4 years<br>
+						<b>Qualifiaction</b> : Diploma, BA(English, Hindi), BCA, BE/B.Tech(CSE), BEd, BSc(CS, Mathematics, Psychology)<br>
+						<b>Working Hours</b> : 6-8 hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Place</b> : Mumbai
+					</p><a href="#demo" class="btn btn-info" data-toggle="collapse">Full Details</a>
+					<div id="demo" class="collapse">
+						<p>
+							Ideal candidate would have passion for Sports, should have participated in various games at District/ State/
+							National level & should be willing to work hard. Remuneration<br>
+							• Sports managers, also referred to as general managers, handle business matters for sports teams and athletes
+							in a variety of sports at the college or professional level.<br>
+							• As a sports manager, you might negotiate contract terms and trade deals, handle media relations, and/or
+							organize promotional events for your organization.<br>
+							• You may also draft players, as well as hire coaches, scouts, and other athletic staff.
+							<br>• Another important aspect of this career is managing the budget of the organization you work for.
+							<br>• This can involve making financial arrangements for uniforms and equipment, setting up accommodations for
+							travel, and preparing financial statements.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-1"><a href="{{ url_for('signup') }}" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job4.png" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-8">
+					<h3>Junior Sports Assistant</h3>
+					<h6>Profile Summary</h6>
+					<p style="font-size: 15px"><b>EmploymentType</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Experience</b> : Fresher<br>
+						<b>Qualifiaction</b> : MPEd<br>
+						<b>Working Hours</b> : 6-7 Hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Place</b> : Mumbai
+					</p><a href="#demo3" class="btn btn-info" data-toggle="collapse">Full Details</a>
+					<div id="demo3" class="collapse">
+						<p>
+							Shiv Nadar University is a multi-disciplinary, student-centric, research-focused university offering a full
+							range of academic programs at the undergraduate, postgraduate and doctoral level. <br>SNU's multi-disciplinary
+							curriculum provides students a strong foundation in disciplines in the humanities and social sciences, natural
+							sciences, technology and engineering studies, communications and management, while enabling them to gain mastery
+							of a subject of their choosing.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+			<div class="container" id="Jaipur"></div><br>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job2.jpg" style="width: 200px;height: 200px;margin-left: 15px"></div>
+				<div class="col-sm-8">
+					<h3>Yoga Teacher</h3>
+					<h6>Profile Summary</h6>
+					<p style="font-size: 15px"><b>EmploymentType</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Experience</b> : 2-3 years<br>
+						<b>Qualifiaction</b> : BBA in Sports Management<br>
+						<b>Working Hours</b> : 3-4 hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Place</b> : Jaipur
+					</p><a href="#demo1" class="btn btn-info" data-toggle="collapse">Full Details</a>
+					<div id="demo1" class="collapse">
+						<p>
+							Four years’ Integrated degree course of Regional College of Education of NCERT in the concerned subject with at
+							least 50% marks in aggregate ; OR Bachelor’s Degree with at least 50% marks in the concerned
+							subjects/combination of subject and in aggregate. The electives subject and languages in the combination of
+							subjects.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job6.png" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-8">
+					<h3>Physical Education Teacher</h3>
+					<h6>Profile Summary</h6>
+					<p style="font-size: 15px"><b>EmploymentType</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Experience</b> : 2-3 years<br>
+						<b>Qualifiaction</b> : BSc(CS), MCA, BE/B.Tech(CSE), BEd, B.P.Ed, MSc(CS, Electronics, IT), Diploma, BCA<br>
+						<b>Working Hours</b> : 3-4 hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Place </b>: Jaipur
+					</p><a href="#demo5" class="btn btn-info" data-toggle="collapse">Full Details</a>
+					<div id="demo5" class="collapse">
+						<p>
+							1) Four years’ Integrated degree course of <b>Regional College of Education</b> of NCERT in the concerned
+							subject with at least 50% marks in aggregate ; OR Bachelor’s Degree with at least 50% marks in the concerned
+							subjects/ combination of subjects and in aggregate.<br> 2) Pass in the Central Teacher Eligibility Test
+							(CTET),conducted by CBSE in accordance with the Guidelines framed by the NCTE for the purpose.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+			<div class="container" id="delhi"></div><br>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job3.png" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-8">
+					<h3>Coaches</h3>
+					<h6>Profile Summary</h6>
+					<p style="font-size: 15px"><b>EmploymentType</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Experience</b> : 7-8 years<br>
+						<b>Qualifiaction</b> : B PEd<br>
+						<b>Working Hours</b> : 5-8 hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Place</b> : Delhi
+					</p><a href="#demo2" class="btn btn-info" data-toggle="collapse">Full Details</a>
+					<div id="demo2" class="collapse">
+						<p>
+							At least one year diploma in Coaching from SAI, NSNIS or any recognized Indian/foreign University OR Represented
+							India in relevant sports/games in Olympics/Asian Games/World Championship with certificate in Coaching from SAI
+							NIS OR A medal winner 1st, 2nd or 3rd position in State or University at senior national with certificate/e in
+							Coaching from SAI NIS OR Has successfully completed two levels of accreditation/certificate courses offered by
+							the International Federation of the sporting discipline concerned.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job4.png" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-8">
+					<h3>Junior Sports Officer</h3>
+					<h6>Profile Summary</h6>
+					<p style="font-size: 15px"><b>EmploymentType</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Experience</b> : Fresher<br>
+						<b>Qualifiaction</b> : MPEd<br>
+						<b>Working Hours</b> : 6-7 Hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Place</b> : Delhi
+					</p><a href="#demo3" class="btn btn-info" data-toggle="collapse">Full Details</a>
+					<div id="demo3" class="collapse">
+						<p>
+							Shiv Nadar University is a multi-disciplinary, student-centric, research-focused university offering a full
+							range of academic programs at the undergraduate, postgraduate and doctoral level. <br>SNU's multi-disciplinary
+							curriculum provides students a strong foundation in disciplines in the humanities and social sciences, natural
+							sciences, technology and engineering studies, communications and management, while enabling them to gain mastery
+							of a subject of their choosing.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+			<div class="container" id="Noida"></div><br>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job5.png" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-8">
+					<h3>Assistant Sports Officer </h3>
+					<h6>Profile Summary</h6>
+					<p style="font-size: 15px"><b>EmploymentType</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Experience</b> : Fresher<br>
+						<b>Qualifiaction</b> : BPEd<br>
+						<b>Working Hours</b> : 6-7 Hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Place</b> : Noida
+					</p><a href="#demo4" class="btn btn-info" data-toggle="collapse">Full Details</a>
+					<div id="demo4" class="collapse">
+						<p>
+							a. Bachelor’s or Master’s degree in Physical Education (B.P.Ed.) or its equivalent. <br>b. Diploma in Coaching
+							or its equivalent.<br> c. Knowledge of computer applications. <br>d. Minimum 05 years of relevant coaching
+							experience in approved College / University / Institution as Asst. Sports Officer.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job6.png" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-8">
+					<h3>Physical Education Teacher</h3>
+					<h6>Profile Summary</h6>
+					<p style="font-size: 15px"><b>EmploymentType</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Experience</b> : 2-3 years<br>
+						<b>Qualifiaction</b> : BSc(CS), MCA, BE/B.Tech(CSE), BEd, B.P.Ed, MSc(CS, Electronics, IT), Diploma, BCA<br>
+						<b>Working Hours</b> : 3-4 hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Place </b>: Noida
+					</p><a href="#demo5" class="btn btn-info" data-toggle="collapse">Full Details</a>
+					<div id="demo5" class="collapse">
+						<p>
+							1) Four years’ Integrated degree course of <b>Regional College of Education</b> of NCERT in the concerned
+							subject with at least 50% marks in aggregate ; OR Bachelor’s Degree with at least 50% marks in the concerned
+							subjects/ combination of subjects and in aggregate.<br> 2) Pass in the Central Teacher Eligibility Test
+							(CTET),conducted by CBSE in accordance with the Guidelines framed by the NCTE for the purpose.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript">
+	var nav = document.getElementById('nav');
+
+	window.onscroll = function () {
+
+		if (window.pageYOffset > 100) {
+
+			nav.style.position = "fixed";
+			nav.style.top = 0;
+
+		} else {
+			// nav.style.position = "absolute";
+			nav.style.position = 'relative'; //fixed
+			nav.style.top = 100;
+		}
+	}
+
+
+</script>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>

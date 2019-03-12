@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/training.css">
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+	<style type="text/css">
+		.sidenav {
+			height: 100%;
+			width: 200px;
+			position: fixed;
+
+			top: 10;
+			left: 0;
+			overflow-x: hidden;
+			padding-left: 50px;
+
+		}
+
+		.sidenav a {
+			padding: 6px 8px 6px 16px;
+			text-decoration: none;
+
+			color: #818181;
+			display: block;
+		}
+
+		.sidenav a:hover {
+			color: black;
+		}
+
+		.main {
+			margin-left: 200px;
+			/* Same as the width of the sidenav */
+			position: absolute;
+			z-index: -1;
+			/* Increased text to enable scrolling */
+			padding: 0px 10px;
+		}
+
+		.wrapper {
+			box-shadow: 1px 1px 1px 1px;
+			margin-top: 10px;
+			padding: 10px;
+
+		}
+
+		@media screen and (max-height: 450px) {
+			.sidenav {
+				padding-top: 15px;
+			}
+
+			.sidenav a {
+				font-size: 18px;
+			}
+		}
+	</style>
+	<title>Eports Website</title>
+</head>
+
+<body>
+
+	<header>
+		<div class="container-fluid top-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div id="google_translate_element"></div>
+					</div>
+					<div class="col-sm-4">
+						<p style="margin-top: 10px;text-align: center;color: white"><i class="fa fa-phone "></i> 1800-200-2244 | <i class="fa fa-envelope "></i>
+							info@govt.com</p>
+					</div>
+					<div class="col-sm-4">
+						<ul class="login-icon">
+							<li style="border-right: 2px solid white"><a href=""><span class="fa fa-sign-in">&nbspLogin</span></a></li>
+							<li><a href=""><span class="fa fa-edit">&nbspRegister</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid " id="marquee_div">
+			<marquee>
+				<p>New job Vacancies are coming please look forword and seetthe bar</p>
+			</marquee>
+
+
+
+		</div>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6">
+					<img src="static/images/logo.png" width="55" height="90" align="left" style="margin: 10px">
+					<h4 style="margin-top: 15px">National E-sports Portal</h1>
+						<p>
+							Ministry of Youth Affairs & Sports<br>
+							Government of India
+						</p>
+
+				</div>
+				<div class="col-sm-6">
+					<img src="static/images/khelo.png" width="200" height="100" align="right">
+					<img src="static/images/digital.png" width="200" height="100" align="right">
+				</div>
+
+
+			</div>
+		</div>
+
+		<nav>
+			<div class="container-fluid main_navbar" id="nav">
+
+					<ul class="main-icons">
+							<li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+						  </ul>
+
+
+			</div>
+
+
+		</nav>
+	</header>
+
+
+
+
+	<div class="sidenav">
+		<a href="#Rajasthan">Rajasthan</a>
+		<a href="#Haryana">Haryana</a>
+		<a href="#Maharashtra">Maharashtra</a>
+		<a href="#Delhi">Delhi</a>
+		<a href="#Karnatka">Karnatka</a>
+		<a href="#wb">West Bengal</a>
+		<a href="#contact">Assam</a>
+		<a href="#contact">Tamil Nadu</a>
+		<a href="#contact">Kerla</a>
+		<a href="#contact">Bihar</a>
+		<a href="#contact">Madhya Pradesh</a>
+	</div>
+	<style>
+		.checked {
+  color: orange;
+}
+</style>
+	<div class="main">
+		<div class="container-fluid" id="Haryana"><br>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/academy1.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Bhiwani Boxing Club</h3>
+					<h6>Bhiwani,Haryana</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2002&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<br><b>Sports</b> :
+						Boxing&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a
+						 href="#" class="fa fa-instagram" style="color: black; font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook"
+						 style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : Dr.kalpesh tanwar<br>
+						<b>Contact Us</b> : +918796254398 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo" class="collapse">
+						<p>
+							Bhiwani boxing Club society of fitness is an Institute, remains a lab for all kinds of activities to develop
+							all-round personality in students. None of which is possible without a sense of discipline which is grained into
+							the spirits of the children. Disorderly habit of living open prove fatal. Therefore our institute emphasis
+							always on self discipline. Today our Nation is in more need of disciplined and dedicated youth. Our Institution
+							is giving proper direction to their surge of energy so that this country can reach a state of prosperity as
+							never before.<br>
+							On 17th February 2003, the meeting was held to constitute a Boxing academy in Bhiwani Distt. in the memory of
+							Late Sh. Rajinder Singh yadav, Boxing Coach Bhiwani. Some upcoming Boxers of Bhiwani district think that without
+							club or institution a discipline in boxing can not excel. In respect of this the youth boxer framed a boxing
+							development body that is Regd. on 21st March 2003 under the society Act 1860. Regd. No. 3037 Sh. Rajiv Dalal
+							I.P.S. (D.G.P.) President Haryana State Boxing Association provided direct affiliation to the boxing club who
+							creates a new history in the field of Boxing for the development of Boxing game. Our Boxing club and fitness
+							society was the first club which was affiliated by Haryana State Boxing Association. That is why the prominent
+							Boxer are taking part directly in the state Championships. Sh. Jagdish Singh (Dronacharya Awardee) Boxing Coach
+							is the Founder/President of the club.
+						</p>
+					</div>
+					<a href="{{ url_for('coach1') }}" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-4">
+					<p style="font-size: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.333235566365!2d76.15299791442145!3d28.769318082363974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3912614000000001%3A0x16817a8f2f3dfb86!2sBhiwani+Boxing+Club!5e0!3m2!1sen!2sin!4v1551116157409"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/academy2.jpg" style="width: 200px;height: 200px;margin-left: 15px"></div>
+				<div class="col-sm-5">
+					<h3>Haryana Sports Academy</h3>
+					<h6>Faridabad,Haryana</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						1999&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br>
+						<b>Sports</b> : Cricket,Football,Badminton&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="fa fa-instagram"
+						 style="color: black; font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook" style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br><br>
+						<b>Chairman</b> : Dr.Dinesh choudhary<br>
+						<b>Contact Us</b> : +918796254396 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo1" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo1" class="collapse">
+						<p>
+							This is one academy that has been designed to develop skills, endurance, wellness and sportsmanship amongst
+							youngsters. Haryana Sports Academy's curriculum is based on the simplest teaching techniques to mastering some
+							fundamental sporting skills. One of their major focal points are to identify and evaluate the players’ potential
+							and create developmental skill plans for them. HSA is a multi-sport academy, providing composite coaching to the
+							players through some of the best coaches in the field. Team Tennis and RKADE Cricket are such academies, to name
+							a few. RKADE Cricket specializes in identifying good talent and nurturing them to play at higher levels.
+						</p>
+					</div> <a href="coach2.html" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-4">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28078.65592736546!2d77.30049959534598!3d28.394142030774542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdd01892067cb%3A0x9fe1501dba9aa67a!2sHaryana+Sports+Academy!5e0!3m2!1sen!2sin!4v1551117295938"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow:hidden; margin-top: 12px;"><img src="static/images/academy3.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Motilal Nehru School of Sports</h3>
+					<h6>Sonipat,Haryana</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2007&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br>
+						<b>Sports</b> :
+						Cricket&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a
+						 href="#" class="fa fa-instagram" style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook"
+						 style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : Dr.Dinesh chandora<br>
+						<b>Contact Us</b> : +918796254396 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo2" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo2" class="collapse">
+						<p>
+							The Motilal Nehru School of Sports, Rai was founded in July 1973 by the Government of Haryana with the prime
+							objective to provide excellent education facilities with extra emphasis on sports to deserving students. The
+							school is organized on the Public School pattern. It is fully residential &amp; co-educational. The School is a
+							member of the Indian Public Schools Conference. The School is affiliated to the Central Board of Secondary
+							Education for the Secondary (Class X) and Senior Secondary (Class XII) Examinations. Our endeavour is to help
+							and guide the students in their vigorous pursuit of excellence in academics and sports.<br>
+							The School is located at Rai, District Sonipat. Rai is popularly known as “Beeswan Meel” and is about 37 Km
+							north of Delhi on the Sher Shah Suri Marg (GT Road). There are frequent bus services from Delhi’s Maharana
+							Partap Inter State Bus Terminus, Kashmiri Gate, Rai “Beeswan Meel”. Buses coming from Chandigarh and Punjab will
+							drop passengers on request at Beeswan
+						</p>
+					</div> <a href="coach3.html" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-4">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.036637478536!2d77.10393841508919!3d28.926962482302745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dae86aaaaa865%3A0x3128044623ae9213!2sMotilal+Nehru+School+of+Sports+Sonipat!5e0!3m2!1sen!2sin!4v1551117775282"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div class="container" id="Rajasthan"><br>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow:hidden; margin-top: 12px;"><img src="static/images/academy4.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>SANCTUARY SPORTS ACADEMY</h3>
+					<h6>JAIPUR, RAJASTHAN</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2004&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<br>
+						<b>Sports</b> : Cricket, Football, Basketball&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="fa fa-instagram"
+						 style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook" style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : Virendra Singh Shekhawat<br>
+						<b>Contact Us</b> : +919983333700 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo3" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo3" class="collapse">
+						<p>
+							There is no denying that Cricket is perhaps the most loved game in India, and over the years with the
+							accomplishments of the National Team along with the fame and glamour associated with the game the younger
+							generation dream of being international cricketers. Why not help them achieve this dream?<br>To do so, we need
+							to spot and nurture talent at the grass root level, i.e. at the basic school level. We feel that a school of
+							your repute should take a lead in this and create the wherewithal to coach talented young schoolboys competently
+							professionally and sincerely.
+						</p>
+					</div> <a href="" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-4">
+					<p><iframe src="https://www.google.com/maps/embed?pb=" width="250" height="200" frameborder="0" style="border:0"
+						 allowfullscreen></iframe></p>
+				</div>
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow:hidden; margin-top: 12px"><img src="static/images/academy5.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Vaikuntha Sports Academy</h3>
+					<h6>Udaipur, RAJASTHAN</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2003&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br>
+						<b>Sports</b> : Cricket, Volleyball, Squash&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="fa fa-instagram"
+						 style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook" style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : Dr.Suresh sheoran<br>
+						<b>Contact Us</b> : +918965472531 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo4" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo4" class="collapse">
+						<p>
+							Come join our AWARD winning soccer academy and experience quality, year round soccer coaching and tournaments
+							for your children!
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.445320253937!2d73.69340231499787!3d24.608331984173393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e5066164929b%3A0x80472b06b68cc3e0!2sVaikuntha+Sports+Academy!5e0!3m2!1sen!2sin!4v1551118610358"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/academy6.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Sagar Equestrian Academy </h3>
+					<h6>Jaipur, RAJASTHAN</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2003&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<br>
+						<b>Sports</b> : Horse
+						Riding&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a
+						 href="#" class="fa fa-instagram" style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook"
+						 style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : Dr.Rajveer Singh<br>
+						<b>Contact Us</b> : +918965982531 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo6" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo6" class="collapse">
+						<p>
+							Sagar Equestrian Academy - Jaipur is one of the finest equestrian academy in JAIPUR area and is truly one of a
+							kind. It is Founded in July'15, the club promotes equine sports ,horse business education,
+							equestrian marketing, show jumping, dressage, eventing (Cross Country), equine business
+							consulting and activities...
+						</p>
+					</div> <a href="" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-3">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.8154539496436!2d75.62133061504687!3d27.0043869830882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c520f7de39365%3A0xbb188c4c8288af80!2sSagar+Equestrian+Sports+Academy!5e0!3m2!1sen!2sin!4v1551118988127"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+			<div class="container" id="Maharashtra"></div><br>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/academy7.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Sanjay Sports Academy </h3>
+					<h6>Pune, Maharashtra</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2008&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<br>
+						<b>Sports</b> : Badminton, Gymnastic&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#"
+						 class="fa fa-instagram" style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook"
+						 style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : MR. GANESH NIMHAN<br>
+						<b>Contact Us</b> : +91896598999 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo7" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo7" class="collapse">
+						<p>
+							Each parent today expects their child to lead a life which gives happiness, contentment, balance and an
+							increased sense of achievement and purpose. Parents want to see their children as highly focused, goal-oriented,
+							showing great leadership qualities and keeping their calm in pressure situations. All this and even more such
+							qualities are inculcated in a child through sports !!! Yes, sports activity can support and benefit children and
+							adults alike in building above qualities which will further help in leading a higher quality of living.
+						</p>
+					</div> <a href="" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-3">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.6398900996037!2d73.80155131489306!3d18.545168487394665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf19acaf9031%3A0xb8510c95296cf2bf!2sSanjay+Sports+Academy!5e0!3m2!1sen!2sin!4v1551119575913"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+
+			</div>
+			<div class="row wrapper"><br>
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/academy8.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3> National Academy of Sports Management</h3>
+					<h6>Mumbai, Maharashtra</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<br>
+						<b>Sports</b> : Cricket,
+						Football&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a
+						 href="#" class="fa fa-instagram" style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook"
+						 style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : MR. Robin Singh<br>
+						<b>Contact Us</b> : +912228444111 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo8" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo8" class="collapse">
+						<p>
+							NASM, National Academy of Sports Management, is an institute dedicated to producing highly professional
+							individuals in the field of Sports Management. With the focused aim of creating professionally, academically and
+							ethically sound sports managers and executives, NASM contributes to this burgeoning space in India.NASM is the
+							first institute in India to offer University recognized Degree and Diploma courses in Sports Management.
+							Identifying the need for experts in the industry, NASM instills its students with basic and advanced theories
+							and techniques in the discipline of management, marketing, merchandising, tourism, law etc. related to the field
+							of sports.
+						</p>
+					</div> <a href="" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-3">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.05500938113!2d72.84516931437851!3d19.19279955327937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6e2eeaaa505%3A0x7bd604c3a40dfc21!2sNASM+-+Mumbai+%7C+National+Academy+of+Sports+Management!5e0!3m2!1sen!2sin!4v1551501462369"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+
+			</div>
+			<div class="row wrapper"><br>
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/academy9.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3> Army Sports Institute</h3>
+					<h6>Pune, Maharashtra</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2001&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<br>
+						<b>Sports</b> : Boxing,
+						Wrestling&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a
+						 href="#" class="fa fa-instagram" style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook"
+						 style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : MR. Satish Kumar Mishra<br>
+						<b>Contact Us</b> : 020-26881753 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo9" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo9" class="collapse">
+						<p>
+							It is a unique, multi-disciplinary Sports Institute which imparts training in seven sports: Archery, Athletics,
+							Boxing, Diving, Wrestling, Fencing and Weightlifting. Training is given by internationally renowned foreign &
+							Indian coaches and qualified physical trainers. They are supported by a team of specialists in sports medicine,
+							sports physiology, sports psychology, bio-mechanics and nutrition. ASI provides state of the art training
+							infrastructure, equipments, accommodation, environment and Sports Sciences Centre.
+						</p>
+					</div> <a href="" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-3">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.971655230078!2d73.90199481489292!3d18.530182987403432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1a6ee64d317%3A0x60062db20f8e3ec7!2sArmy+Sports+Institute!5e0!3m2!1sen!2sin!4v1551503073411"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+
+			</div>
+			<div class="container" id="Delhi"></div><br>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/academy10.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Krishna Sports Academy</h3>
+					<h6>Delhi</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2009&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<br>
+						<b>Sports</b> :
+						Cricket&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a
+						 href="#" class="fa fa-instagram" style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook"
+						 style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : MR. Harender Tolia<br>
+						<b>Contact Us</b> : +919389657852 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo10" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo10" class="collapse">
+						<p>
+							Each parent today expects their child to lead a life which gives happiness, contentment, balance and an
+							increased sense of achievement and purpose. Parents want to see their children as highly focused, goal-oriented,
+							showing great leadership qualities and keeping their calm in pressure situations. All this and even more such
+							qualities are inculcated in a child through sports !!! Yes, sports activity can support and benefit children and
+							adults alike in building above qualities which will further help in leading a higher quality of living.
+						</p>
+					</div> <a href="" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-3">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.426073698724!2d77.14740621508027!3d28.526910382459548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1dd53eaaaaab%3A0x8d67da4d33487b10!2sKrishna+Sports+Academy!5e0!3m2!1sen!2sin!4v1551504688836"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/academy11.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Bosco Sports Academy</h3>
+					<h6>Delhi</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2007&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+						<br>
+						<b>Sports</b> :
+						Basketball&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a
+						 href="#" class="fa fa-instagram" style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook"
+						 style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : MR. Manish Singh<br>
+						<b>Contact Us</b> : +919389657932 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo11" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo11" class="collapse">
+						<p>
+							Each parent today expects their child to lead a life which gives happiness, contentment, balance and an
+							increased sense of achievement and purpose. Parents want to see their children as highly focused, goal-oriented,
+							showing great leadership qualities and keeping their calm in pressure situations. All this and even more such
+							qualities are inculcated in a child through sports !!! Yes, sports activity can support and benefit children and
+							adults alike in building above qualities which will further help in leading a higher quality of living.
+						</p>
+					</div> <a href="" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-3">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.725491677128!2d77.08467831508337!3d28.667936982403823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04658b6ef249%3A0xc3ec65b3b14228c1!2sBosco+Sports+Academy!5e0!3m2!1sen!2sin!4v1551505283189"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/academy7.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Turf Sports Academy</h3>
+					<h6>Delhi</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2007&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+						<br>
+						<b>Sports</b> :
+						Volleyball&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a
+						 href="#" class="fa fa-instagram" style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook"
+						 style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : MR. Dinesh Singhal<br>
+						<b>Contact Us</b> : +919389657962 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo12" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo12" class="collapse">
+						<p>
+							Each parent today expects their child to lead a life which gives happiness, contentment, balance and an
+							increased sense of achievement and purpose. Parents want to see their children as highly focused, goal-oriented,
+							showing great leadership qualities and keeping their calm in pressure situations. All this and even more such
+							qualities are inculcated in a child through sports !!! Yes, sports activity can support and benefit children and
+							adults alike in building above qualities which will further help in leading a higher quality of living.
+						</p>
+					</div> <a href="" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-3">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.843530897711!2d77.22552811508199!3d28.604470482428834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2c2efbde339%3A0x9606f2d7b34ddb2b!2sTURF+SPORTS+ACADEMY+-+HUMANYUN+ROAD!5e0!3m2!1sen!2sin!4v1551505958185"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+
+			</div>
+			<div class="container" id="Karnatka"></div><br>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/academy4.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Talent Tennis Academy </h3>
+					<h6>Bengaluru, Karnatka</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2003&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<br>
+						<b>Sports</b> : Tennis
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a
+						 href="#" class="fa fa-instagram" style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook"
+						 style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : MR. GANESH NIMHAN<br>
+						<b>Contact Us</b> : +91896598999 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo13" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo13" class="collapse">
+						<p>
+							Each parent today expects their child to lead a life which gives happiness, contentment, balance and an
+							increased sense of achievement and purpose. Parents want to see their children as highly focused, goal-oriented,
+							showing great leadership qualities and keeping their calm in pressure situations. All this and even more such
+							qualities are inculcated in a child through sports !!! Yes, sports activity can support and benefit children and
+							adults alike in building above qualities which will further help in leading a higher quality of living.
+						</p>
+					</div> <a href="" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-3">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31113.304847618067!2d77.61892662149677!3d12.897231467890958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae148e64c47239%3A0x36d67c503b1b440b!2sTalent+Tennis+Academy!5e0!3m2!1sen!2sin!4v1551506970753"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow:hidden; margin-top: 12px;"><img src="static/images/academy3.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Bharath Sports Academy</h3>
+					<h6>Shivamogga, Karnatka</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2007&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<br>
+						<b>Sports</b> :
+						Cricket&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a
+						 href="#" class="fa fa-instagram" style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook"
+						 style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : Dr.Dinesh chandora<br>
+						<b>Contact Us</b> : +918796254396 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo14" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo14" class="collapse">
+						<p>
+							The Motilal Nehru School of Sports, Rai was founded in July 1973 by the Government of Haryana with the prime
+							objective to provide excellent education facilities with extra emphasis on sports to deserving students. The
+							school is organized on the Public School pattern. It is fully residential &amp; co-educational. The School is a
+							member of the Indian Public Schools Conference. The School is affiliated to the Central Board of Secondary
+							Education for the Secondary (Class X) and Senior Secondary (Class XII) Examinations. Our endeavour is to help
+							and guide the students in their vigorous pursuit of excellence in academics and sports.<br>
+							The School is located at Rai, District Sonipat. Rai is popularly known as “Beeswan Meel” and is about 37 Km
+							north of Delhi on the Sher Shah Suri Marg (GT Road). There are frequent bus services from Delhi’s Maharana
+							Partap Inter State Bus Terminus, Kashmiri Gate, Rai “Beeswan Meel”. Buses coming from Chandigarh and Punjab will
+							drop passengers on request at Beeswan
+						</p>
+					</div> <a href="" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-4">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.036637478536!2d77.10393841508919!3d28.926962482302745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dae86aaaaa865%3A0x3128044623ae9213!2sMotilal+Nehru+School+of+Sports+Sonipat!5e0!3m2!1sen!2sin!4v1551117775282"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+			</div>
+			<div class="container" id="wb"></div><br>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/academy8.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Aditya School of Sports </h3>
+					<h6>Howrah, West Bengal</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2005&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<br>
+						<b>Sports</b> : Hockey
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a
+						 href="#" class="fa fa-instagram" style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook"
+						 style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : MR. Mahile Baroda<br>
+						<b>Contact Us</b> : +91896598999 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo15" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo15" class="collapse">
+						<p>
+							Each parent today expects their child to lead a life which gives happiness, contentment, balance and an
+							increased sense of achievement and purpose. Parents want to see their children as highly focused, goal-oriented,
+							showing great leadership qualities and keeping their calm in pressure situations. All this and even more such
+							qualities are inculcated in a child through sports !!! Yes, sports activity can support and benefit children and
+							adults alike in building above qualities which will further help in leading a higher quality of living.
+						</p>
+					</div> <a href="" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-3">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.060006314929!2d88.40912461496032!3d22.61423428516137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89e1d32ad818f%3A0xdfec2c6415e1f609!2sAditya+School+Of+Sports!5e0!3m2!1sen!2sin!4v1551507602551"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow:hidden; margin-top: 12px;"><img src="static/images/academy4.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Rebbecca SPORTS ACADEMY</h3>
+					<h6>Kolkata, West Bengal</h6>
+					<p style="font-size: 15px"><b>Established:</b> :
+						2004&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<br>
+						<b>Sports</b> : Cricket, Football, Basketball&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="fa fa-instagram"
+						 style="color: black;font-size:20px;">&nbsp&nbsp</a><a href="#" class="fa fa-facebook" style="color: black;font-size:20px;"></a>
+						&nbsp<a href="#" class="fa fa-twitter" style="color: black;font-size:20px;"></a>&nbsp<a href="#" class="fa fa-whatsapp"
+						 style="color: black;font-size:20px;"></a><br>
+						<b>Chairman</b> : Virendra Singh Shekhawat<br>
+						<b>Contact Us</b> : +919983333700 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo3" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo3" class="collapse">
+						<p>
+							There is no denying that Cricket is perhaps the most loved game in India, and over the years with the
+							accomplishments of the National Team along with the fame and glamour associated with the game the younger
+							generation dream of being international cricketers. Why not help them achieve this dream?<br>To do so, we need
+							to spot and nurture talent at the grass root level, i.e. at the basic school level. We feel that a school of
+							your repute should take a lead in this and create the wherewithal to coach talented young schoolboys competently
+							professionally and sincerely.
+						</p>
+					</div> <a href="" class="btn btn-info"><i class="fa fa-forward"></i></a>
+				</div>
+				<div class="col-sm-4">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.6552340615954!2d88.32700901495991!3d22.591994485172787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277f3b81646e9%3A0x16c4b875751ef4fb!2sRebecca+Belilious+Sports+Academy!5e0!3m2!1sen!2sin!4v155150775755"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript">
+	var nav = document.getElementById('nav');
+
+	window.onscroll = function () {
+
+		if (window.pageYOffset > 100) {
+
+			nav.style.position = "fixed";
+			nav.style.top = 0;
+
+		} else {
+			// nav.style.position = "absolute";
+			nav.style.position = 'relative'; //fixed
+			nav.style.top = 100;
+		}
+	}
+
+
+</script>
+
+
+<script src="static/javascript/jquery.js"></script>
+<script src="static/javascript/bootstrap.min.js"></script>
+
+</html>

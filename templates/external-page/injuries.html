@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style type="text/css">
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+
+  top: 10;
+  left: 0;
+  overflow-x: hidden;
+  padding-left: 50px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+ position:absolute;
+ z-index:-1;/* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.wrapper
+{
+	  box-shadow: 1px 1px 1px 1px;
+	  margin-top: 10px;
+	  padding:10px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+ <title>Injuries</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+ <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../static/css/training.css">
+<link rel="stylesheet" type="text/css" href="../static/css/selection.css">
+</head>
+<body>
+  <header>
+  <div class="container-fluid top-nav">
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="google_translate_element"  ></div>
+      </div>
+      <div class="col-sm-4"><p style="margin-top: 10px;text-align: center;color: white"><i class="fa fa-phone "></i> 1800-200-2244 | <i class="fa fa-envelope "></i>  info@govt.com</p></div>
+      <div class="col-sm-4">
+        <ul class="login-icon">
+          <li style="border-right: 2px solid white"><a href="" ><span class="fa fa-sign-in">&nbspLogin</span></a></li>
+                    <li><a href="" ><span class="fa fa-edit">&nbspRegister</span></a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="container-fluid " id="marquee_div">
+    <marquee><p>New job Vacancies are coming please look forword and seetthe bar</p></marquee>
+    
+
+
+  </div>
+  <div class="container" >
+    <div class="row">
+      
+       <div class="col-sm-6">
+                <a href="index.html"><img src="static/images/logo.png" width="55" height="90" align="left" style="margin: 10px">
+                <h4 style="margin-top: 15px">National E-sports Portal</h1>
+                <p >
+                    Ministry of Youth Affairs & Sports<br>
+                        Government of India
+                </p>
+                </a>
+            </div>
+      <div class="col-sm-6">
+        <img src="static/images/khelo.png" width="200" height="100" align="right">
+        <img src="static/images/digital.png" width="200" height="100" align="right">
+      </div>
+
+      
+    </div>
+  </div>
+
+  <nav>
+    <div class="container-fluid main_navbar">
+      <div class="row">
+
+       
+          <ul class="main-icons">
+              <li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+              </ul>
+      </div>
+      
+    </div>
+
+
+  </nav>
+</header>
+
+<div style="height: 30px;"></div>
+<div class="container">
+    <div class="row " id="cricket">
+        
+         
+              <div class="column">
+                <div class="card">
+                    <img src="static/images/toeij.jpg">
+                  <h3><b>Toe Injury</b></h3>
+                  <a href="#demo" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo" class="collapse">
+                  <p align="left">One such injury is "turf toe," something that happens in football or other sports when the toe is forcefully bent in the wrong way<br><b>Symptoms:</b>Throbbing pain,hear the bone break,swelling at the break.<br><b>Recovery:</b>4 to 6 weeks<br><b>Dietary Intake :</b>calcium and vitamin D,milk, cheese, and yogurt</p><br>
+
+                </div>
+                </div>
+              </div>
+
+
+               <div class="column">
+                <div class="card">
+                    <img src="static/images/hamstring.jpg">
+                  <h3><b>Hamstring</b></h3>
+                  <a href="#demo1" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo1" class="collapse">
+                  <p align="left">A hamstring injury is a strain or tear to the tendons or large muscles at the back of the thigh.<br><b>Symptoms:</b>Sudden and severe pain,Pain in the back of the thigh,Tenderness,Bruising<br><b>Recovery:</b>weeks or months<br><b>Dietary Intake :</b> Protein and potassium,anthocyanins (plant compounds),omega-3 fats, Plain or vanilla yogurt topped with blueberries, grilled salmon over wild rice, or 1-2 cups cooked broccoli</p><br>
+
+                </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                    <img src="static/images/knee.jpg">
+                  <h3><b>Knee Niggle</b></h3>
+                  <a href="#demo2" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo2" class="collapse">
+                  <p align="left">The cartilage in the knee gradually wears away, causing pain and swelling. Injuries to ligaments and tendons also cause knee problems<br><b>Symptoms:</b>Swelling and stiffness,Redness,Weakness,crunching noises<br><b>Recovery:</b>six weeks<br><b>Dietary Intake :</b>Omega-3s,eat two 3-ounce servings of fatty fish each week, trout, salmon, mackerel, herring, tuna, and sardines</p><br>
+
+                </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                    <img src="static/images/finger.jpg">
+                  <h3><b>Finger Injury</b></h3>
+                  <a href="#demo3" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo3" class="collapse">
+                  <p align="left">Finger pain is common.Once you know the cause of your finger pain, you can determine what steps can be taken for the treatment of your condition.<br><b>Symptoms:</b>including broken fingers and sprains, or chronic conditions, such as arthritis<br><b>Recovery:</b>3 to 6 weeks<br><b>Dietary Intake :</b>Carrots, spinach, sweet potatoes, and kale for vitamin A; oranges, strawberries, peppers, and broccoli for vitamin C</p><br>
+
+                </div>
+                </div>
+              </div>          
+                
+
+    </div>
+
+     <div class="row" style="margin-top: 30px">
+        <div class="column">
+                <div class="card">
+                    <img src="static/images/thigh.jpg">
+                  <h3><b>Thigh Injury</b></h3>
+                  <a href="#demo4" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo4" class="collapse">
+                  <p align="left">A thigh strain refers to an injury where the fibres in a quadriceps muscles are overstretched<br><b>Symptoms:</b>Sudden and severe pain,Pain in the back of the thigh,Tenderness,Bruising<br><b>Recovery:</b>up to six weeks or more<br><b>Dietary Intake :</b>Omega-3 fatty acids,Extra virgin olive oil,Antioxidants, such as vitamin C, carotenes, and bioflavonoids,Vitamin D,Certain spices</p><br>
+
+                </div>
+                </div>
+              </div>
+
+
+              <div class="column">
+                <div class="card">
+                    <img src="static/images/tennis.jpg">
+                  <h3><b>Tennis Elbow</b></h3>
+                  <a href="#demo5" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo5" class="collapse">
+                  <p align="left">Tennis elbow is an inflammation of the tendons that join the forearm muscles on the outside of the elbow<br><b>Symptoms:</b>The pain associated with tennis elbow may radiate from the outside of your elbow into your forearm and wrist<br><b>Recovery:</b> 6 to 8 weeks<br><b>Dietary Intake :</b>intake of fresh fruits and vegetables, nuts, whole grains and fatty fish, such as salmon</p><br>
+
+                </div>
+                </div>
+              </div>
+
+              
+              <div class="column">
+                <div class="card">
+                    <img src="static/images/ankle.jpg">
+                  <h3><b>Ankle Injury</b></h3>
+                  <a href="#demo6" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo6" class="collapse">
+                  <p align="left">While ankle pain can result from a large number of ankle and foot injuries, the most common ankle injuries are sprains<br><b>Symptoms:</b>swelling,tenderness,bruising,pain,skin discoloration,stiffness<br><b>Recovery:</b>at least six weeks<br><b>Dietary Intake :</b>meat and fish enhance the body's muscle-building process. Citrus fruits and dark leafy greens rich in vitamin C</p><br>
+
+                </div>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                    <img src="static/images/sholder.jpg">
+                  <h3><b>Shoulder Injury</b></h3>
+                  <a href="#demo7" class="btn btn-info" data-toggle="collapse">More Details</a>
+                <div id="demo7" class="collapse">
+                  <p align="left">If your shoulder is pulled back too hard or rotated too far, the top of your arm might pop out of its socket<br><b>Symptoms:</b>Pain at rest and at night,Pain when lifting and lowering your arm,Crepitus or crackling sensation<br><b>Recovery:</b>about three to six months<br><b>Dietary Intake :</b>onions, asparagus, brown rice and avocados. Consider avoiding foods that contain solanine, including eggplant, peppers and white potatoes</p><br>
+
+                </div>
+                </div>
+              </div>
+         
+
+     </div>
+</div>
+
+</body>
+<script type="text/javascript">
+     var nav = document.getElementById('nav');
+
+       window.onscroll = function () {
+
+         if(window.pageYOffset > 100){
+
+          nav.style.position = "fixed";
+          nav.style.top = 0;
+
+          }else{
+            // nav.style.position = "absolute";
+            nav.style.position = 'relative'; //fixed
+            nav.style.top = 100;
+          }
+       }
+
+
+</script>
+<script src="static/javascript/jquery.js"></script>
+<script src="static/javascript/bootstrap.min.js"></script>
+
+</html>

@@ -1,0 +1,46 @@
+{% extends "login-system/layout.html" %}
+
+
+{% block msg %}
+<h1> Sign-in your account to open dashboard </h1>
+<p><mark> {{ msg }} </mark></p>
+{% endblock %}
+
+
+{% block body %}
+<!-- this form is shown when field is empty -->
+<form action="{{ url_for('verify_signin') }}" method="POST">
+    <div class="row" style="margin-left:35%">
+        <div class="form-group">
+            <label>Select Category<span style="color:red">*</span></label>
+            <select class="form-control" style="width:220px" required aria-required="true" name="field">
+                <option value="">Choose</option>
+                <option value="student">Student</option>
+                <option value="player">Player</option>
+                <option value="applicant">Applicant</option>
+                <option value="goverment">Goverment</option>
+            </select>
+        </div>
+    </div>
+    <div class="row" style="margin-left:35%">
+        <div class="form-group">
+            <label class="control-label" for="email">Mobile No.<span style="color:red">*</span></label>
+        
+                <input type="tel" name="mobile" pattern="[1-9]{1}[0-9]{9}"  class="form-control" placeholder="enter 10 digit mobile Number" required />
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-left:38%">
+        <div class="form-group"><label for="destination">Password<span style="color:red">*</span></label>
+            <input type="password" name="password" class="form-control" placeholder="enter password" required />
+        </div>
+
+    </div>
+ 
+    <div class="row" style="margin-left:38%">
+    <button class="btn btn-primary" type="submit">login in</button>
+    </div>
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+<head>
+<style type="text/css">
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+
+  top: 10;
+  left: 0;
+  overflow-x: hidden;
+  padding-left: 20px;
+
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+ position:absolute;
+ z-index:-1;/* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.wrapper
+{
+	  box-shadow: 1px 1px 1px 1px;
+	  margin-top: 10px;
+	  padding:10px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<title>Sport Wise</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+<link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../static/css/training.css">
+<link rel="stylesheet" type="text/css" href="../static/css/selection.css">
+
+</head>
+<body>
+	
+<header>
+	<div class="container-fluid top-nav">
+		<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div id="google_translate_element"	></div>
+			</div>
+			<div class="col-sm-4"><p style="margin-top: 10px;text-align: center;color: white"><i class="fa fa-phone "></i> 1800-200-2244 | <i class="fa fa-envelope "></i>  info@govt.com</p></div>
+			<div class="col-sm-4">
+				<ul class="login-icon">
+					<li style="border-right: 2px solid white"><a href="" ><span class="fa fa-sign-in">&nbspLogin</span></a></li>
+                    <li><a href="" ><span class="fa fa-edit">&nbspRegister</span></a></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div class="container-fluid " id="marquee_div">
+		<marquee><p>New job Vacancies are coming please look forword and seetthe bar</p></marquee>
+		
+
+
+	</div>
+	<div class="container" >
+		<div class="row">
+			
+			 <div class="col-sm-6">
+                <a href="index.html"><img src="static/images/logo.png" width="55" height="90" align="left" style="margin: 10px">
+                <h4 style="margin-top: 15px">National E-sports Portal</h1>
+                <p >
+                    Ministry of Youth Affairs & Sports<br>
+                        Government of India
+                </p>
+                </a>
+            </div>
+			<div class="col-sm-6">
+				<img src="static/images/khelo.png" width="200" height="100" align="right">
+				<img src="static/images/digital.png" width="200" height="100" align="right">
+			</div>
+
+			
+		</div>
+	</div>
+
+	<nav>
+		<div class="container-fluid main_navbar">
+			<div class="row">
+
+					<ul class="main-icons">
+							<li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+						  </ul>
+
+			</div>
+			
+		</div>
+
+
+	</nav>
+</header>
+
+
+
+<div class="sidenav" style="margin-top: 100px">
+  <a href="#Olympic">Olympic sports</a>
+  <a href="#Non-olympic">Non-olympic sports</a>
+  <a href="#Winter">Winter sports</a>
+  <a href="#Traditional">Traditional and Regional sports</a>
+</div>
+
+<div class="main">
+<div class="container" id="Olympic" ><br><br>
+	<h3>Olympic Sports</h3>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/hockey.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" >
+			<h2><a href="#">Field Hockey</a></h2>
+			<p style="font-size: 15px">Field Hockey is a <b>popular sport</b> in India.<br>Until the mid-1970s, India men's team dominated international field hockey.<br><b>Olympic gold medals :</b>7<br>Won the <b>1975 Men's Hockey World Cup</b>.<br>Other best hockey-playing nations are Australia, Netherlands and Germany.<br><b>Decline in India :</b>Due to the change in rules of the game, introduction of artificial turf, and internal politics in Indian field hockey bodies.<br>The popularity of field hockey has also declined massively parallel to the decline of the Indian hockey team.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br><img src="static/images/olympiclogo.png" style="width: 80px;height: 80px"><br><br><a href="{{ url_for('hockey') }}" class="btn btn-info" >Players</a></div>
+
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/football.png" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" >
+		<h2><a href="#">Football</a></h2>
+		<p style="font-size: 15px"><b>Introduced to India :</b> During the British colonial period.<br>India has never been represented in any <b>FIFA World Cup</b><br>Qualify for <b>FIFA World Cup in 1950.</b><br>India was an Asian powerhouse in football in the <b>1950s and 1960s</b>.<br><b>Achievements :</b>First Asian team to reach semi-finals in an Olympic football tournament in 1956 Summer Olympics at Melbourne and Neville D'Souza became the first Asian and Indian to score a hat-trick (record remains unbeaten) in an Olympic match.</p>
+		</div>
+		<div class="col-sm-1" ><br><br><img src="static/images/olympiclogo.png" style="width: 80px;height: 80px"><br><br><a href="football.html" class="btn btn-info" >Players</a></div>
+
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/tennis.png" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h3><a href="#">Tennis</a></h3>
+			<p style="font-size: 15px">Tennis is a sport among Indians in urban areas.<br>Tennis has gained popularity after the exploits of Vijay Amritraj.<br><b>Achievements :</b>India's fortunes in Grand Slam singles have been unimpressive, although Leander Paes won a singles bronze medal at the 1996 Olympics.<br>Since the late 1990s India has had impressive results in Grand Slam doubles, Leander Paes and Mahesh Bhupathi have won many men's doubles and mixed doubles Grand Slam titles.<br><b>Sania Mirza</b> is the most notable Indian woman tennis player, having won a WTA title and breaking into the Top 30 WTA rankings, also winning three Grand Slam doubles events, the first at Wimbledon in 2015.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br><img src="static/images/olympiclogo.png" style="width: 80px;height: 80px"><a href="#demo" class="btn btn-info" data-toggle="collapse">Players</a></div>
+
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/badminton.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h3><a href="#">Badminton</a></h3>
+			<p style="font-size: 15px"><b>Badminton</b> is played widely in India and it is one of the <b>most popular sports</b> in India.<br>Badminton is a <b>fast growing sport</b> in India.<br>Badminton's <b>popularity has grown</b> in recent years.<br>Indian shuttlers <b>Saina Nehwal</b>, <b>K. Srikanth</b> and <b>P.V. Sindhu</b> are ranked amongst top-10 in current <b>BWF ranking</b>.<br><b>Prakash Padukone</b> was the first player from India to achieve <b>world no.1 spot</b> in the game and after him <b>K. Srikanth</b> made it to the top spot as male player for second time in April 2018 and <b>Saina Nehwal</b> is the first female player from India to achieve World no.1 spot in April 2015.<br>The most successful doubles player from India is <b>Jwala Gutta</b>, who is the only Indian to have been ranked in the top-10 of two categories.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br><img src="static/images/olympiclogo.png" style="width: 80px;height: 80px"><a href="#demo" class="btn btn-info" data-toggle="collapse">Players</a></div>
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/basketball.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h3><a href="#">Basketball</a></h3>
+			<p style="font-size: 15px"><b>Basketball</b> is a <b>popular sport</b> in India, played in almost every school, although very few people follow it professionally.<br>India has both <b>men's and women's</b> national basketball teams.<br>Both teams have hired head coaches who have worked extensively with <b>NBA players</b> and now aim to popularise the game in India.<br><b>Satnam Singh Bhamara</b> officially marks the <b>first player</b> from India to be selected in the <b>NBA</b> by being taken by the Dallas Mavericks as the 52nd pick of the <b>2015 NBA draft</b>, as well as the first player to be drafted straight out of high school as a postgraduate.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br><img src="static/images/olympiclogo.png" style="width: 80px;height: 80px"><a href="#demo" class="btn btn-info" data-toggle="collapse">Players</a></div>
+	</div>
+</div>
+
+
+<div class="container" id="Non-olympic" ><br><br>
+	<h3>Non-olympic Sports</h3>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/cricket.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" >
+			<h2><a href="#">Cricket</a></h2>
+			<p style="font-size: 15px"><b>Cricket</b> has a long history in India, having been introduced in the country during the <b>British rule</b>.<br> It is the <b>most popular sport</b> by a wide margin in India .<br>Cricket is played on <b>local, national, and international levels</b>, and enjoys consistent support from people in most parts of India.<br>Its development has been closely tied in with the history of the country, mirroring many of the political and cultural developments around issues such as <b>caste, gender, religion, and nationality</b>.<br>The <b>Indian national cricket</b> team played its first official match (a <b>Test</b>) in <b>1932 against England</b>, and the team's performance since then has generally been mixed, sometimes enjoying stupendous success and sometimes suffering outright failure.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br><img src="static/images/sports4.png" style="width: 80px;height: 80px"><a href="#demo" class="btn btn-info" data-toggle="collapse">Players</a></div>
+
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/kabaddi.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" >
+		<h2><a href="#">Kabaddi</a></h2>
+		<p style="font-size: 15px"><b>Kabaddi</b> is a <b>popular national sport</b> in India, played mainly among <b>people in villages</b>. It is regarded as a team-contact sport and as a recreational form of combat training.<br>Two teams occupy opposite halves of a small field and take turns sending a <b>raider</b> into the other half to win points by <b>tagging and wrestling members</b> of the opposing team.<br>The raider then attempts to return to his own half while holding his breath and chanting "<b>kabaddi, kabaddi, kabaddi</b>" during the whole raid.<br>India has won <b>gold</b> in all the <b>Asian Games</b> in kabaddi excepting 2018 Asian games where they got <b>bronze</b>.<br> The four forms of kabaddi recognised by Kabaddi federation in India are <b>Amar, Sanjeevni, Gaminee and Punjabi rules Kabaddi</b>.<br> India won the <b>Kabaddi World Championship</b> in 2007, beating Iran 29-19.			</p>
+		</div>
+		<div class="col-sm-1" ><br><br><img src="static/images/sports4.png" style="width: 80px;height: 80px"><a href="#demo" class="btn btn-info" data-toggle="collapse">Players</a></div>
+
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/motorsports.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h3><a href="#">Motorsports</a></h3>
+			<p style="font-size: 15px"><b>Motorsport</b> is a <b>popular spectator sport</b> in India, although there are relatively few competitors compared to other sports, due to the high costs of competing.<br><b>Coimbatore</b> is often referred to as the "<b>Motor sports Capital of India</b>" and the "<b>Backyard of Indian Motorsports</b>".<br><b>S.Karivardhan</b>, spearheaded motor racing, making Coimbatore the country's motor racing hub when he designed and built entry level race cars.<br>Before <b>Buddh International Circuit</b> was constructed, the country's only two permanent race ways were the Kari Motor Speedway, Coimbatore and Madras Motor Racing Track, Chennai.<br><b>MRF</b> built the first Formula 3 car in 1997.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br><img src="static/images/sports4.png" style="width: 80px;height: 80px"><a href="#demo" class="btn btn-info" data-toggle="collapse">Players</a></div>
+
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/billiard.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h3><a href="#">Billiards and snooker</a></h3>
+			<p style="font-size: 15px"><b>Billiards</b> is played with three balls: <b>white</b>, <b>red</b> and <b>yellow</b>.<br> The white and yellow balls are the cue balls of the two opponents respectively and the objective is to score some set points.<br> The player who scores the required points first, wins.<br> In snooker, there are 15 red and six coloured balls and one cue ball.<br>The first <b>pocket billiards championship</b> was played in <b>1878</b> with the dominant form of the game being American Four-Ball Billiards.<br>Professional players became so well known that cigarette cards were issued featuring them.<br>The most famous pool game, eight-ball, was invented shortly after 1900.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br><img src="static/images/sports4.png" style="width: 80px;height: 80px"><a href="#demo" class="btn btn-info" data-toggle="collapse">Players</a></div>
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/chess.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h3><a href="#">Chess</a></h3>
+			<p style="font-size: 15px"><b>Chess</b> is a two-player strategy board game played on a <b>chessboard</b>, a checkered gameboard with 64 squares arranged in an <b>8x8 grid</b>.<br>The game is played by millions of people worldwide.<br> Chess is believed to be derived from the <b>Indian game chaturanga</b> some time before the 7th century.<br> <b>Chaturanga</b> is also the likely ancestor of the Eastern strategy games <b>xiangqi, janggi, and shogi</b>.<br> Chess reached Europe by the 9th century, due to the Umayyad conquest of Hispania.<br> The pieces assumed their current powers in Spain in the late 15th century with the introduction of "<b>Mad Queen Chess</b>" the modern rules were standardized in the 19th century.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br><img src="static/images/sports4.png" style="width: 80px;height: 80px"><a href="#demo" class="btn btn-info" data-toggle="collapse">Players</a></div>
+	</div>
+</div>
+<div class="container" id="Winter" ><br><br>
+	<h3>Winter Sports</h3>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/bandy.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h3><a href="#">Bandy</a></h3>
+			<p style="font-size: 15px">India has a <b>national bandy team</b>. <br>The Bandy Federation of India governs bandy in India. <br>Its headquarters are in <b>Mandi in Himachal Pradesh</b>.<br> Bandy, a team winter sport played on <b>ice</b>, in which skaters use sticks to direct a ball into the opposing team's goal, is generally played in northern India, where there is snow and ice.<br> India is one of seven countries in Asia and out of a total of 28 to be a member of <b>Federation of International Bandy</b>.<br> BFI planned to send a team to the 2011 Asian Winter Games in <b>Astana-Almaty</b>,but ultimately did not.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br><img src="static/images/winter.jpg" style="width: 80px;height: 80px"><a href="#demo" class="btn btn-info" data-toggle="collapse">Players</a></div>
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/icehocky.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h3><a href="#">Ice Hockey</a></h3>
+			<p style="font-size: 15px"><b>Ice hockey</b> is a contact team sport played on ice, usually in a rink, in which two teams of skaters use their sticks to shoot a vulcanized rubber puck into their opponent's net to score points.<br> The sport is known to be fast-paced and physical, with teams usually consisting of six players each: one <b>goaltender</b>, and five players who skate up and down the ice trying to take the puck and score a goal against the opposing team.<br>In addition, ice hockey is the most popular winter sport in <b>Belarus</b>, <b>Croatia</b>, the <b>Czech Republic</b>, <b>Finland, Latvia, Russia, Slovakia, Sweden,</b> and <b>Switzerland</b>.<br> <b>North America's National Hockey League (NHL)</b> is the highest level for men's ice hockey and the strongest professional ice hockey league in the world.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br><img src="static/images/winter.jpg" style="width: 80px;height: 80px"><a href="#demo" class="btn btn-info" data-toggle="collapse">Players</a></div>
+	</div>
+</div>
+<div class="container" id="Traditional" ><br><br>
+	<h3>Traditional and Regional Sports</h3>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/khokho.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h3><a href="#">Kho-Kho</a></h3>
+			<p style="font-size: 15px"><b>Kho kho</b> is a popular tag and ancient sport from India.<br> It is played by <b>teams of 12</b> nominated players out of fifteen, of which nine enter the field who sit on their knees (<b>chasing team</b>), and 3 extra (<b>defending team</b>) who try to avoid being touched by members of the opposing team.<br> It is one of the two most popular traditional tag games in the Indian subcontinent, the other being <b>Kabaddi</b>.<br>Apart from the Indian subcontinent, it is also played by the Indian community in South Africa.<br>Kho-kho, traditional Indian sport, a form of tag, that is one of the oldest forms of outdoor sport, dating back to prehistoric India.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br></div>
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/gilli.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h3><a href="#">Gilli Danda</a></h3>
+			<p style="font-size: 15px"><b>Gilli Danda</b> is an amateur sport, originating from the Indian subcontinent, played in the rural areas and small towns all over <b>South Asia</b> as well as <b>Cambodia, Turkey, South Africa, Italy</b> and in some <b>Caribbean islands like Cuba</b>.<br> The game is played with two sticks: a large one called a <b>danda</b> which is used to hit a smaller one, the <b>gilli</b>. <br>Standing in a small circle, the player balances the gilli on a stone in an inclined manner (somewhat like a see-saw) with one end of the gilli touching the ground while the other end is in the air.<br> The player then uses the danda to hit the gilli at the raised end, which flips it into the air.<br> While it is in the air, the player strikes the gilli, hitting it as far as possible.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br></div>
+	</div>
+	<div class="row wrapper">
+		<div class="col-sm-3" ><img src="static/images/kancha.jpg" style="width: 200px;height: 200px"></div>
+		<div class="col-sm-8" ><h3><a href="#">Kancha</a></h3>
+			<p style="font-size: 15px">Also called <b>goti</b>, this game spawned proud collections of numerous and differently coloured kanchas or marbles.<br> The objective of the game is to hit a few marbles on the ground with your own marbles using a particular technique.<br> Whoever is successful in hitting the targets takes the marbles of all other players and is the winner.<br>Kancha also known as Goti is an <b>Indian traditional game</b> which are mostly played by kids but still are cherished by people of other ages since it reminds them of their childhood.<br> These are absolute fun to play.<br> As we can notice that the modern generation is engaged in playing indoor games or engaged on the mobile phones or the computers, this game is still cherished as an outdoor game.
+			</p>
+		</div>
+		<div class="col-sm-1" ><br><br></div>
+	</div>
+	
+</div>
+</div>
+
+</body>
+<script type="text/javascript">
+	 var nav = document.getElementById('nav');
+
+       window.onscroll = function () {
+
+         if(window.pageYOffset > 100){
+
+          nav.style.position = "fixed";
+          nav.style.top = 0;
+
+          }else{
+            // nav.style.position = "absolute";
+            nav.style.position = 'relative'; //fixed
+            nav.style.top = 100;
+          }
+       }
+
+
+</script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>

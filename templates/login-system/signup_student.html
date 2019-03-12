@@ -1,0 +1,135 @@
+{% extends "login-system/layout.html" %}
+
+
+{% block msg %}
+<h1>Student signup form</h1>
+<p><mark>{{ msg }}</mark></p>
+{% endblock %}
+
+
+{% block body %}
+<h5>{{ field }}</h5>
+<form action="{{ url_for('register') }}" method="POST">
+
+    <div class="row">
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Name <span style="color:red">*</span></label><br>
+                <input type="text" name="name" pattern="[A-Za-z' ']+" title="name only contain alphabat" class="form-control"  maxlength="30" required/>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>D.O.B<span style="color:red">*</span></label>
+                <input class="form-control" class="form-control" type="date" name="dob" required /> </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="row">
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Sex<span style="color:red">*</span></label>
+                <select required aria-required="true" class="form-control" name="sex">
+                    <option value="">Choose</option>
+                    <option value="m">male</option>
+                    <option value="f">female</option>
+                    <option value="o">other</option>
+                </select>
+
+            </div>
+        </div>
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+
+                <label>Email<span style="color:red">*</span></label>
+                <input class="form-control" type="email" name="email" maxlength="30" required />
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Mobile No <span style="color:red">*</span></label>
+                <input class="form-control" type="tel" pattern="[1-9]{1}[0-9]{9}" name="mobileno" value="{{ number }}" placeholder="{{ number }}" disabled />
+            </div>
+        </div>
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Aadhar No<span style="color:red">*</span></label>
+                <input class="form-control" type="tel" name="aadhar" pattern="[1-9]{12}" title="please enter valid aadhar number followed by 12 digit" required />
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Pin-Code<span style="color:red">*</span></label>
+                <input class="form-control" type="tel" name="pincode" pattern="[1-9]{6}" title="please enter valid pincode followed by 6 digit" required />
+
+            </div>
+        </div>
+
+
+        <div class="col-sm-6">
+            <div class="form-group">
+
+                <label>qualification<span style="color:red">*</span></label>
+                <input class="form-control" type="text" name="qualification" required />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="form-group">
+
+                <label>game<span style="color:red">*</span></label>
+                <input class="form-control" type="textarea" name="game" placeholder="game" required />
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Password<span style="color:red">*</span></label>
+                <input class="form-control" type="password" name="password" placeholder="enter password" maxlength="30" required />
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row align-self-center">
+        <div class="form-group">
+
+
+            <button class="btn btn-primary" align="center" type="submit">Create Account</button>
+        </div>
+    </div>
+
+</form>
+{% endblock %}

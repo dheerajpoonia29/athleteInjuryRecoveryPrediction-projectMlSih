@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+
+<head>
+
+
+    <title>Eports Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/training.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div id="google_translate_element"></div>
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="margin-top: 10px;text-align: center;color: white"><i class="fa fa-phone "></i>
+                            1800-200-2244 | <i class="fa fa-envelope "></i> info@govt.com</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="login-icon">
+                            <li style="border-right: 2px solid white"><a href=""><span class="fa fa-sign-in">&nbspLogin</span></a></li>
+                            <li><a href=""><span class="fa fa-edit">&nbspRegister</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid " id="marquee_div">
+            <marquee>
+                <p>New job Vacancies are coming please look forword and seetthe bar</p>
+            </marquee>
+
+
+
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <img src="static/images/logo.png" width="55" height="90" align="left" style="margin: 10px">
+                    <h4 style="margin-top: 15px">National E-sports Portal</h1>
+                        <p>
+                            Ministry of Youth Affairs & Sports<br>
+                            Government of India
+                        </p>
+
+                </div>
+                <div class="col-sm-6">
+                    <img src="static/images/khelo.png" width="200" height="100" align="right">
+                    <img src="static/images/digital.png" width="200" height="100" align="right">
+                </div>
+
+
+            </div>
+        </div>
+
+        <nav>
+            <div class="container-fluid main_navbar" id="nav">
+
+
+                    <ul class="main-icons">
+                            <li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+                          </ul>
+
+
+            </div>
+
+
+        </nav>
+    </header>
+    <div style="height: 30px;"></div>
+    <div class="container">
+        <div class="row " id="cricket">
+            <div class="column">
+                <div class="card" style="width:240px; height: 400px">
+                    <img src="static/images/ac1.1.png" style="width:220px; height: 200px; margin-left: 10px;">
+                    <h3><b>
+                            <center>Kamal Singh
+                        </b></h3>
+                    <p><b>Age: </b>34
+                        <br><b>Expierence:</b> 4 years 3 months<br>
+                        <b>Qualification:</b> Diploma <br>
+                        <b>Sports:</b> Cricket</p>
+                    <button class="btn btn-primary" style="margin-top: 8px">Send Query</button>
+                </div>
+            </div>
+
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <div class="column">
+                <div class="card" style="width:240px; height: 400px">
+                    <img src="static/images/ac1.2.jpg" style="width: 220px; height: 200px; margin-left: 10px">
+                    <h3><b>
+                            <center>Jagdish Singh</center>
+                        </b></h3>
+                    <p><b>Age:</b> 37<br>
+                        <b>Expierence:</b> 4 years<br>
+                        <b>Qualification: </b>Sports Mgmt.<br>
+                        <b>Sports:</b> Boxing</p>
+                    <button class="btn btn-primary" style="margin-top: 8px" type="button" data-toggle="modal"
+                        data-target="#exampleModal" data-whatever="@getbootstrap">Send Query</button>
+
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <form action="{{ url_for('send_notification',sender= 'government') }}" method="POST">
+                                          <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                            <select class="form-control" required aria-required="true" id="sel1" name="recepient">
+                                              <option value="">Choose</option>
+                                              <option value="applicant">Coach</option>
+                                            </select>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" name="msg" id="message-text"></textarea>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <input type="submit" class="btn btn-primary" value="send">
+                                          </div>
+                                        </form>
+                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <div class="column">
+                <div class="card" style="width:240px; height: 400px">
+                    <img src="static/images/ac1.jpg" style="width: 220px; height: 200px; margin-left: 10px">
+                    <h3><b>
+                            <center>Ratan Singh</center>
+                        </b></h3>
+                    <p><b>Age:</b> 30<br>
+                        <b>Expierence:</b> 6 years<br>
+                        <b>Qualification: </b>Bsc(PED) <br>
+                        <b>Sports:</b> Boxing</p>
+                    <button></button>
+                    <button class="btn btn-primary" style="margin-top: 8px" type="button" data-toggle="modal"
+                        data-target="#exampleModal" data-whatever="@getbootstrap">Send Query</button>
+
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../static/javascript/jquery.js"></script>
+<script src="../static/javascript/bootstrap.min.js"></script>
+<script type="text/javascript">
+    var nav = document.getElementById('nav');
+
+    window.onscroll = function () {
+
+        if (window.pageYOffset > 100) {
+
+            nav.style.position = "fixed";
+            nav.style.top = 0;
+
+        } else {
+            // nav.style.position = "absolute";
+            nav.style.position = 'relative'; //fixed
+            nav.style.top = 100;
+        }
+    }
+
+
+</script>
+
+</html>
