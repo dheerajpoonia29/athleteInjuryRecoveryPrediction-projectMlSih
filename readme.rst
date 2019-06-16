@@ -1,5 +1,5 @@
-###################
-What is Namastesir
-###################
-e-sports-portal is web interative portal for sportsperson which predict injury recovery time period for an injured player 
-and help to aknowlged to coach that it came to play at this given duration of time.
+#######################
+What is e-sports-portal
+#######################
+e-sports-portal is web interactive portal for sportsperson which predicts injury recovery time period for an injured player 
+and help to acknowledge the coach that player will come back on this given duration of time.
